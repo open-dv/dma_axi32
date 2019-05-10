@@ -1,0 +1,107 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html;charset=utf-8"/>
+  <title>Questa Coverage Report</title>
+  <!-- original name: _tb_top_u_dma_axi32_wrap_u_dma_axi32_dma_axi32_dual_core_dma_axi32_core0_top_dma_axi32_core0_dma_axi32_core0_axim_wr_dma_axi32_axim_wdata_gen_joint_stallContentFrame3.htm -->
+  <link rel="StyleSheet" media="print"  href="../css/ucdb2htmlP.css"/>
+  <link rel="StyleSheet" media="screen" href="../css/ucdb2html.css"/>
+  <link rel="StyleSheet" media="screen" href="../css/ucdb2html_newlook.css"/>
+  <script type="text/javascript" src="../scripts/jquery.js"></script>
+  <script type="text/javascript" src="../scripts/showhide.js"></script>
+  
+</head>
+<body id="ucdb2html_detail" onload="showLast()">
+  <h1><span class="strip">Questa</span> Expression Coverage Report</h1>
+  <h3>Scope: /<a href="z000072.htm">tb_top</a>/<a href="z000401.htm">u_dma_axi32_wrap</a>/<a href="z000667.htm">u_dma_axi32</a>/<a href="z000872.htm">dma_axi32_dual_core</a>/<a href="z001769.htm">dma_axi32_core0_top</a>/<a href="z001945.htm">dma_axi32_core0</a>/<a href="z002850.htm">dma_axi32_core0_axim_wr</a>/<a href="z003141.htm">dma_axi32_axim_wdata</a>/<a href="z003325.htm">gen_joint_stall</a></h3>
+  <!-- use script block so buttons vanish when JavaScript is disabled -->
+  <script type="text/javascript">
+  <!--
+  document.write(
+    '<table class="buttons" cellspacing="2" cellpadding="2"><tr>' +
+       '<td id="showAll" width="100" onclick="showAll()" class="button_on" ' +
+           'title="Display all coverage scopes and bins.">Show All</td>' +
+       '<td id="showCov" width="100" onclick="showCov()" class="button_off" ' +
+           'title="Display only covered scopes and bins.">Show Covered</td>' +
+       '<td id="showMis" width="100" onclick="showMis()" class="button_off" ' +
+           'title="Display only uncovered scopes and bins.">Show Missing</td>' +
+    '</tr></table>');
+  //-->
+  </script>
+  <div class="missing"><a name="cvg3329"/><hr/><table>
+  <tr s="3" x="FE" lnk="__HDL_srcfile_16.htm#78" z="   assign               rd_transfer_joint   = joint_req_out &amp; r..." c="R" p="0.00" F="1"/>
+  <tr/>
+  <tr z="joint_req_out" c="r" r="'_1' not hit" i="Hit '_1'"/>
+  <tr z="rd_transfer" c="r" r="No hits" i="Hit '_0' and '_1'"/>
+  <tr/>
+  <tr n="1" z="joint_req_out_0" h1="1" t="e" c1="{ 01 }"/>
+  <tr n="2" z="joint_req_out_1" h1="0" t="e" c1="{ 11 }"/>
+  <tr n="3" z="rd_transfer_0" h1="0" t="e" c1="{ 10 }"/>
+  <tr n="4" z="rd_transfer_1" h1="0" t="e" c1="{ 11 }"/>
+  </table>
+</div><div class="missing"><a name="cvg3331"/><hr/><table>
+  <tr s="3" x="FE" lnk="__HDL_srcfile_16.htm#92" z="   assign               joint_stall_pre     = joint_req_out &amp; (..." c="R" p="0.00" F="1"/>
+  <tr/>
+  <tr z="joint_req_out" c="r" r="'_1' not hit" i="Hit '_1'"/>
+  <tr z="(count_ch_fifo_pre > 2)" c="r" r="No hits" i="Hit '_0' and '_1'"/>
+  <tr z="(count_ch_fifo_pre == 2)" c="r" r="No hits" i="Hit '_0' and '_1'"/>
+  <tr z="(data_fullness_pre > 1)" c="r" r="No hits" i="Hit '_0' and '_1'"/>
+  <tr z="HOLD" c="r" r="No hits" i="Hit '_0' and '_1'"/>
+  <tr/>
+  <tr n="1" z="joint_req_out_0" h1="1" t="e" c1="{ 01--- 0-11- 0---1 }"/>
+  <tr n="2" z="joint_req_out_1" h1="0" t="e" c1="{ 11--- 1-11- 1---1 }"/>
+  <tr n="3" z="(count_ch_fifo_pre > 2)_0" h1="0" t="e" c1="{ 100-0 10-00 }"/>
+  <tr n="4" z="(count_ch_fifo_pre > 2)_1" h1="0" t="e" c1="{ 110-0 11-00 }"/>
+  <tr n="5" z="(count_ch_fifo_pre == 2)_0" h1="0" t="e" c1="{ 10010 }"/>
+  <tr n="6" z="(count_ch_fifo_pre == 2)_1" h1="0" t="e" c1="{ 10110 }"/>
+  <tr n="7" z="(data_fullness_pre > 1)_0" h1="0" t="e" c1="{ 10100 }"/>
+  <tr n="8" z="(data_fullness_pre > 1)_1" h1="0" t="e" c1="{ 10110 }"/>
+  <tr n="9" z="HOLD_0" h1="0" t="e" c1="{ 100-0 10-00 }"/>
+  <tr n="10" z="HOLD_1" h1="0" t="e" c1="{ 100-1 10-01 }"/>
+  </table>
+</div><div class="missing"><a name="cvg3333"/><hr/><table>
+  <tr s="3" x="FE" lnk="__HDL_srcfile_16.htm#95" z="   assign               joint_not_ready_pre = joint_req_out &amp; (..." c="R" p="0.00" F="1"/>
+  <tr/>
+  <tr z="joint_req_out" c="r" r="'_1' not hit" i="Hit '_1'"/>
+  <tr z="(data_fullness_pre > 1)" c="r" r="No hits" i="Hit '_0' and '_1'"/>
+  <tr z="rd_transfer_joint" c="r" r="No hits" i="Hit '_0' and '_1'"/>
+  <tr z="joint_stall_pre" c="r" r="No hits" i="Hit '_0' and '_1'"/>
+  <tr/>
+  <tr n="1" z="joint_req_out_0" h1="1" t="e" c1="{ 010- 01-0 }"/>
+  <tr n="2" z="joint_req_out_1" h1="0" t="e" c1="{ 110- 11-0 }"/>
+  <tr n="3" z="(data_fullness_pre > 1)_0" h1="0" t="e" c1="{ 100- 10-0 }"/>
+  <tr n="4" z="(data_fullness_pre > 1)_1" h1="0" t="e" c1="{ 110- 11-0 }"/>
+  <tr n="5" z="rd_transfer_joint_0" h1="0" t="e" c1="{ 1101 }"/>
+  <tr n="6" z="rd_transfer_joint_1" h1="0" t="e" c1="{ 1111 }"/>
+  <tr n="7" z="joint_stall_pre_0" h1="0" t="e" c1="{ 1110 }"/>
+  <tr n="8" z="joint_stall_pre_1" h1="0" t="e" c1="{ 1111 }"/>
+  </table>
+</div><div class="missing"><a name="cvg3335"/><hr/><table>
+  <tr s="3" x="FE" lnk="__HDL_srcfile_16.htm#106" z="   assign               joint_stall = joint_stall_reg | (joint_..." c="R" p="0.00" F="1"/>
+  <tr/>
+  <tr z="joint_stall_reg" c="r" r="'_1' not hit" i="Hit '_1'"/>
+  <tr z="joint_req_out" c="r" r="No hits" i="Hit '_0' and '_1'"/>
+  <tr z="HOLD" c="r" r="No hits" i="Hit '_0' and '_1'"/>
+  <tr/>
+  <tr n="1" z="joint_stall_reg_0" h1="1" t="e" c1="{ 00- 0-0 }"/>
+  <tr n="2" z="joint_stall_reg_1" h1="0" t="e" c1="{ 10- 1-0 }"/>
+  <tr n="3" z="joint_req_out_0" h1="0" t="e" c1="{ 001 }"/>
+  <tr n="4" z="joint_req_out_1" h1="0" t="e" c1="{ 011 }"/>
+  <tr n="5" z="HOLD_0" h1="0" t="e" c1="{ 010 }"/>
+  <tr n="6" z="HOLD_1" h1="0" t="e" c1="{ 011 }"/>
+  </table>
+</div><script type="text/javascript" src="../scripts/buildecpage.js"></script>
+  <!-- make sure jumps to last few line nos work -->
+<br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+<br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+<br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+<br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+<br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+<br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+<br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+<br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+<br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+<br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+  
+</body>
+</html>

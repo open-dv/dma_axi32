@@ -1,0 +1,106 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html;charset=utf-8"/>
+  <title>Questa Coverage Report</title>
+  <!-- original name: _tb_top_u_dma_axi32_wrap_u_dma_axi32_dma_axi32_dual_core_dma_axi32_regContentFrame2.htm -->
+  <link rel="StyleSheet" media="print"  href="../css/ucdb2htmlP.css"/>
+  <link rel="StyleSheet" media="screen" href="../css/ucdb2html.css"/>
+  <link rel="StyleSheet" media="screen" href="../css/ucdb2html_newlook.css"/>
+  <script type="text/javascript" src="../scripts/jquery.js"></script>
+  <script type="text/javascript" src="../scripts/showhide.js"></script>
+  
+</head>
+<body id="ucdb2html_detail" onload="showLast()">
+  <h1><span class="strip">Questa</span> Branch Coverage Report</h1>
+  <h3>Scope: /<a href="z000072.htm">tb_top</a>/<a href="z000401.htm">u_dma_axi32_wrap</a>/<a href="z000667.htm">u_dma_axi32</a>/<a href="z000872.htm">dma_axi32_dual_core</a>/<a href="z001393.htm">dma_axi32_reg</a></h3>
+  <!-- use script block so buttons vanish when JavaScript is disabled -->
+  <script type="text/javascript">
+  <!--
+  document.write(
+    '<table class="buttons" cellspacing="2" cellpadding="2"><tr>' +
+       '<td id="showAll" width="100" onclick="showAll()" class="button_on" ' +
+           'title="Display all coverage scopes and bins.">Show All</td>' +
+       '<td id="showCov" width="100" onclick="showCov()" class="button_off" ' +
+           'title="Display only covered scopes and bins.">Show Covered</td>' +
+       '<td id="showMis" width="100" onclick="showMis()" class="button_off" ' +
+           'title="Display only uncovered scopes and bins.">Show Missing</td>' +
+    '</tr></table>');
+  //-->
+  </script>
+  <div class="covered"><a name="cvg1394"/><hr/><table>
+  <tr l="182" lnk="__HDL_srcfile_7.htm#182" z="     if (reset)" c="G" p="100.00"/><tr/>
+  <tr cr="c" t="I" l="182" lnk="__HDL_srcfile_7.htm#182" z="     if (reset)" h="11" c="g"/>
+  <tr cr="c" t="T" l="184" lnk="__HDL_srcfile_7.htm#184" z="     else if (wr_periph_rx | (|periph_rx_clr))" h="3" c="g"/>
+  <tr cr="c" t="A" l="182" lnk="__HDL_srcfile_7.htm#182" z="     if (reset)" h="229" c="g"/>
+  </table>
+  </div><div class="covered"><a name="cvg1395"/><hr/><table>
+  <tr l="188" lnk="__HDL_srcfile_7.htm#188" z="     if (reset)" c="G" p="100.00"/><tr/>
+  <tr cr="c" t="I" l="188" lnk="__HDL_srcfile_7.htm#188" z="     if (reset)" h="11" c="g"/>
+  <tr cr="c" t="T" l="190" lnk="__HDL_srcfile_7.htm#190" z="     else if (wr_periph_tx | (|periph_tx_clr))" h="1" c="g"/>
+  <tr cr="c" t="A" l="188" lnk="__HDL_srcfile_7.htm#188" z="     if (reset)" h="231" c="g"/>
+  </table>
+  </div><div class="covered"><a name="cvg1396"/><hr/><table>
+  <tr l="200" lnk="__HDL_srcfile_7.htm#200" z="     if (reset)" c="G" p="100.00"/><tr/>
+  <tr cr="c" t="I" l="200" lnk="__HDL_srcfile_7.htm#200" z="     if (reset)" h="11" c="g"/>
+  <tr cr="c" t="E" l="202" lnk="__HDL_srcfile_7.htm#202" z="     else" h="232" c="g"/>
+  </table>
+  </div><div><a name="cvg1397"/><hr/><table>
+  <tr l="210" lnk="__HDL_srcfile_7.htm#210" z="    case (gpaddr)" c="R" p="25.00"/><tr/>
+  <tr cr="c" t="T" l="211" lnk="__HDL_srcfile_7.htm#211" z="      PROC0_STATUS             : prdata_pre  = {{16{1'b0}}, pro..." h="5" c="g"/>
+  <tr cr="m" t="T" l="213" lnk="__HDL_srcfile_7.htm#213" z="      CORE0_JOINT              : prdata_pre  = {{31{1'b0}}, joi..." h="0" c="r"/>
+  <tr cr="m" t="T" l="215" lnk="__HDL_srcfile_7.htm#215" z="      CORE0_PRIO               : prdata_pre  = {{16{1'b0}}, wr_..." h="0" c="r"/>
+  <tr cr="m" t="T" l="217" lnk="__HDL_srcfile_7.htm#217" z="      CORE0_CLKDIV             : prdata_pre  = {{28{1'b0}}, cor..." h="0" c="r"/>
+  <tr cr="c" t="T" l="219" lnk="__HDL_srcfile_7.htm#219" z="      CORE0_START              : prdata_pre  = {32{1'b0}};" h="2" c="g"/>
+  <tr cr="m" t="T" l="221" lnk="__HDL_srcfile_7.htm#221" z="      PERIPH_RX_CTRL            : prdata_pre  = {periph_rx_req_..." h="0" c="r"/>
+  <tr cr="m" t="T" l="222" lnk="__HDL_srcfile_7.htm#222" z="      PERIPH_TX_CTRL            : prdata_pre  = {periph_tx_req_..." h="0" c="r"/>
+  <tr cr="m" t="T" l="224" lnk="__HDL_srcfile_7.htm#224" z="      IDLE                      : prdata_pre  = {{30{1'b0}}, co..." h="0" c="r"/>
+  <tr cr="m" t="T" l="226" lnk="__HDL_srcfile_7.htm#226" z="      USER_DEF_STAT             : prdata_pre  = user_def_stat;" h="0" c="r"/>
+  <tr cr="m" t="T" l="227" lnk="__HDL_srcfile_7.htm#227" z="      USER_DEF0_STAT0          : prdata_pre  = user_def0_stat0;..." h="0" c="r"/>
+  <tr cr="m" t="T" l="228" lnk="__HDL_srcfile_7.htm#228" z="      USER_DEF0_STAT1          : prdata_pre  = user_def0_stat1;..." h="0" c="r"/>
+  <tr cr="c" t="T" l="230" lnk="__HDL_srcfile_7.htm#230" z="      default                   : prdata_pre  = {32{1'b0}};" h="1" c="g"/>
+  </table>
+  </div><div><a name="cvg1398"/><hr/><table>
+  <tr l="239" lnk="__HDL_srcfile_7.htm#239" z="    case (gpaddr)" c="R" p="16.66"/><tr/>
+  <tr cr="c" t="T" l="240" lnk="__HDL_srcfile_7.htm#240" z="      PROC0_STATUS             : pslverr_pre = gpwrite; //read ..." h="2" c="g"/>
+  <tr cr="m" t="T" l="242" lnk="__HDL_srcfile_7.htm#242" z="      CORE0_JOINT              : pslverr_pre = 1'b0;    //read ..." h="0" c="r"/>
+  <tr cr="m" t="T" l="244" lnk="__HDL_srcfile_7.htm#244" z="      CORE0_PRIO               : pslverr_pre = 1'b0;    //read ..." h="0" c="r"/>
+  <tr cr="m" t="T" l="246" lnk="__HDL_srcfile_7.htm#246" z="      CORE0_CLKDIV             : pslverr_pre = 1'b0;    //read ..." h="0" c="r"/>
+  <tr cr="c" t="T" l="248" lnk="__HDL_srcfile_7.htm#248" z="      CORE0_START              : pslverr_pre = gpread;  //write..." h="2" c="g"/>
+  <tr cr="m" t="T" l="250" lnk="__HDL_srcfile_7.htm#250" z="      PERIPH_RX_CTRL            : pslverr_pre = 1'b0;    //read..." h="0" c="r"/>
+  <tr cr="m" t="T" l="251" lnk="__HDL_srcfile_7.htm#251" z="      PERIPH_TX_CTRL            : pslverr_pre = 1'b0;    //read..." h="0" c="r"/>
+  <tr cr="m" t="T" l="253" lnk="__HDL_srcfile_7.htm#253" z="      IDLE                      : pslverr_pre = gpwrite; //read..." h="0" c="r"/>
+  <tr cr="m" t="T" l="255" lnk="__HDL_srcfile_7.htm#255" z="      USER_DEF_STAT             : pslverr_pre = gpwrite; //read..." h="0" c="r"/>
+  <tr cr="m" t="T" l="256" lnk="__HDL_srcfile_7.htm#256" z="      USER_DEF0_STAT0          : pslverr_pre = gpwrite; //read ..." h="0" c="r"/>
+  <tr cr="m" t="T" l="257" lnk="__HDL_srcfile_7.htm#257" z="      USER_DEF0_STAT1          : pslverr_pre = gpwrite; //read ..." h="0" c="r"/>
+  <tr cr="m" t="T" l="259" lnk="__HDL_srcfile_7.htm#259" z="      default                   : pslverr_pre = psel;    //deco..." h="0" c="r"/>
+  </table>
+  </div><div><a name="cvg1399"/><hr/><table>
+  <tr l="265" lnk="__HDL_srcfile_7.htm#265" z="     if (reset)" c="Y" p="50.00"/><tr/>
+  <tr cr="c" t="I" l="265" lnk="__HDL_srcfile_7.htm#265" z="     if (reset)" h="11" c="g"/>
+  <tr cr="m" t="T" l="267" lnk="__HDL_srcfile_7.htm#267" z="     else if (gpread &amp; pclken)" h="0" c="r"/>
+  <tr cr="c" t="T" l="269" lnk="__HDL_srcfile_7.htm#269" z="     else if (pclken) //zero to allow or in apb_mux" h="232" c="g"/>
+  <tr cr="m" t="A" l="265" lnk="__HDL_srcfile_7.htm#265" z="     if (reset)" h="0" c="r"/>
+  </table>
+  </div><div><a name="cvg1400"/><hr/><table>
+  <tr l="273" lnk="__HDL_srcfile_7.htm#273" z="     if (reset)" c="Y" p="75.00"/><tr/>
+  <tr cr="c" t="I" l="273" lnk="__HDL_srcfile_7.htm#273" z="     if (reset)" h="11" c="g"/>
+  <tr cr="c" t="T" l="275" lnk="__HDL_srcfile_7.htm#275" z="     else if ((gpread | gpwrite) &amp; pclken)" h="1" c="g"/>
+  <tr cr="c" t="T" l="277" lnk="__HDL_srcfile_7.htm#277" z="     else if (pclken)" h="231" c="g"/>
+  <tr cr="m" t="A" l="273" lnk="__HDL_srcfile_7.htm#273" z="     if (reset)" h="0" c="r"/>
+  </table>
+  </div><script type="text/javascript" src="../scripts/buildbranchpage.js"></script>
+  <!-- make sure jumps to last few line nos work -->
+<br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+<br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+<br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+<br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+<br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+<br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+<br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+<br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+<br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+<br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+  
+</body>
+</html>

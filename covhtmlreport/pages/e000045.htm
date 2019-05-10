@@ -1,0 +1,176 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html;charset=utf-8"/>
+  <title>Questa Coverage Report</title>
+  <!-- original name: _work.dma_axi32_core0_axim_wdataContentFrame3.htm -->
+  <link rel="StyleSheet" media="print"  href="../css/ucdb2htmlP.css"/>
+  <link rel="StyleSheet" media="screen" href="../css/ucdb2html.css"/>
+  <link rel="StyleSheet" media="screen" href="../css/ucdb2html_newlook.css"/>
+  <script type="text/javascript" src="../scripts/jquery.js"></script>
+  <script type="text/javascript" src="../scripts/showhide.js"></script>
+  
+</head>
+<body id="ucdb2html_detail" onload="showLast()">
+  <h1><span class="strip">Questa</span> Expression Coverage Report</h1>
+  <h3>Scope: /<a href="z000045.htm">work.dma_axi32_core0_axim_wdata</a></h3>
+  <!-- use script block so buttons vanish when JavaScript is disabled -->
+  <script type="text/javascript">
+  <!--
+  document.write(
+    '<table class="buttons" cellspacing="2" cellpadding="2"><tr>' +
+       '<td id="showAll" width="100" onclick="showAll()" class="button_on" ' +
+           'title="Display all coverage scopes and bins.">Show All</td>' +
+       '<td id="showCov" width="100" onclick="showCov()" class="button_off" ' +
+           'title="Display only covered scopes and bins.">Show Covered</td>' +
+       '<td id="showMis" width="100" onclick="showMis()" class="button_off" ' +
+           'title="Display only uncovered scopes and bins.">Show Missing</td>' +
+    '</tr></table>');
+  //-->
+  </script>
+  <div class="covered"><a name="cvg3158"/><hr/><table>
+  <tr s="3" x="FE" lnk="__HDL_srcfile_19.htm#178" z="   assign               data_pending_pre = WVALID &amp; (~WREADY);" c="G" p="100.00" F="1"/>
+  <tr/>
+  <tr z="WVALID" c="g" r="" i=""/>
+  <tr z="WREADY" c="g" r="" i=""/>
+  <tr/>
+  <tr n="1" z="WVALID_0" h1="1" t="e" c1="{ 00 }"/>
+  <tr n="2" z="WVALID_1" h1="1" t="e" c1="{ 10 }"/>
+  <tr n="3" z="WREADY_0" h1="1" t="e" c1="{ 10 }"/>
+  <tr n="4" z="WREADY_1" h1="1" t="e" c1="{ 11 }"/>
+  </table>
+</div><div><a name="cvg3160"/><hr/><table>
+  <tr s="3" x="FE" lnk="__HDL_srcfile_19.htm#199" z="                  ch_fifo_wr_ready);" c="R" p="20.00" F="1"/>
+  <tr/>
+  <tr z="joint_fifo_rd_valid" c="r" r="'_1' not hit" i="Hit '_1'"/>
+  <tr z="cmd_empty" c="g" r="" i=""/>
+  <tr z="data_pending" c="r" r="'_1' not hit" i="Hit '_1'"/>
+  <tr z="wr_clr_line_stall" c="r" r="'_1' not hit" i="Hit '_1'"/>
+  <tr z="ch_fifo_wr_ready" c="r" r="'_0' not hit" i="Hit '_0'"/>
+  <tr/>
+  <tr n="1" z="joint_fifo_rd_valid_0" h1="1" t="e" c1="{ 01--- 0-1-- 0--1- 0---0 }"/>
+  <tr n="2" z="joint_fifo_rd_valid_1" h1="0" t="e" c1="{ 11--- 1-1-- 1--1- 1---0 }"/>
+  <tr n="3" z="cmd_empty_0" h1="1" t="e" c1="{ 00001 }"/>
+  <tr n="4" z="cmd_empty_1" h1="1" t="e" c1="{ 01001 }"/>
+  <tr n="5" z="data_pending_0" h1="1" t="e" c1="{ 00001 }"/>
+  <tr n="6" z="data_pending_1" h1="0" t="e" c1="{ 00101 }"/>
+  <tr n="7" z="wr_clr_line_stall_0" h1="1" t="e" c1="{ 00001 }"/>
+  <tr n="8" z="wr_clr_line_stall_1" h1="0" t="e" c1="{ 00011 }"/>
+  <tr n="9" z="ch_fifo_wr_ready_0" h1="0" t="e" c1="{ 00000 }"/>
+  <tr n="10" z="ch_fifo_wr_ready_1" h1="1" t="e" c1="{ 00001 }"/>
+  </table>
+</div><div class="covered"><a name="cvg3162"/><hr/><table>
+  <tr s="3" x="FE" lnk="__HDL_srcfile_19.htm#223" z="   assign               wr_transfer_pre      = WVALID &amp; WREADY;..." c="G" p="100.00" F="1"/>
+  <tr/>
+  <tr z="WVALID" c="g" r="" i=""/>
+  <tr z="WREADY" c="g" r="" i=""/>
+  <tr/>
+  <tr n="1" z="WVALID_0" h1="1" t="e" c1="{ 01 }"/>
+  <tr n="2" z="WVALID_1" h1="1" t="e" c1="{ 11 }"/>
+  <tr n="3" z="WREADY_0" h1="1" t="e" c1="{ 10 }"/>
+  <tr n="4" z="WREADY_1" h1="1" t="e" c1="{ 11 }"/>
+  </table>
+</div><div><a name="cvg3164"/><hr/><table>
+  <tr s="3" x="FE" lnk="__HDL_srcfile_19.htm#245" z="   assign               valid_last      = ch_fifo_rd &amp; (rd_out_..." c="Y" p="66.66" F="1"/>
+  <tr/>
+  <tr z="cmd_empty" c="r" r="'_1' not hit" i="Hit '_1'"/>
+  <tr z="ch_fifo_rd" c="g" r="" i=""/>
+  <tr z="(rd_out_count == WLEN_cmd)" c="g" r="" i=""/>
+  <tr/>
+  <tr n="1" z="cmd_empty_0" h1="1" t="e" c1="{ 011 }"/>
+  <tr n="2" z="cmd_empty_1" h1="0" t="e" c1="{ 111 }"/>
+  <tr n="3" z="ch_fifo_rd_0" h1="1" t="e" c1="{ 001 }"/>
+  <tr n="4" z="ch_fifo_rd_1" h1="1" t="e" c1="{ 011 }"/>
+  <tr n="5" z="(rd_out_count == WLEN_cmd)_0" h1="1" t="e" c1="{ 010 }"/>
+  <tr n="6" z="(rd_out_count == WLEN_cmd)_1" h1="1" t="e" c1="{ 011 }"/>
+  </table>
+</div><div class="missing"><a name="cvg3166"/><hr/><table>
+  <tr s="3" x="FE" lnk="__HDL_srcfile_19.htm#247" z="   assign               wr_clr_line_pre = valid_last &amp; line_end..." c="R" p="0.00" F="1"/>
+  <tr/>
+  <tr z="valid_last" c="r" r="No hits" i="Hit '_0' and '_1'"/>
+  <tr z="line_end" c="r" r="'_1' not hit" i="Hit '_1'"/>
+  <tr/>
+  <tr n="1" z="valid_last_0" h1="0" t="e" c1="{ 01 }"/>
+  <tr n="2" z="valid_last_1" h1="0" t="e" c1="{ 11 }"/>
+  <tr n="3" z="line_end_0" h1="1" t="e" c1="{ 10 }"/>
+  <tr n="4" z="line_end_1" h1="0" t="e" c1="{ 11 }"/>
+  </table>
+</div><div class="missing"><a name="cvg3168"/><hr/><table>
+  <tr s="3" x="FE" lnk="__HDL_srcfile_19.htm#255" z="   assign wr_clr_line_stall_pre = wr_clr_line_pre &amp; (ch_fifo_rd..." c="R" p="0.00" F="1"/>
+  <tr/>
+  <tr z="wr_clr_line_pre" c="r" r="'_1' not hit" i="Hit '_1'"/>
+  <tr z="(ch_fifo_rd_num == line_end_num)" c="r" r="No hits" i="Hit '_0' and '_1'"/>
+  <tr/>
+  <tr n="1" z="wr_clr_line_pre_0" h1="1" t="e" c1="{ 01 }"/>
+  <tr n="2" z="wr_clr_line_pre_1" h1="0" t="e" c1="{ 11 }"/>
+  <tr n="3" z="(ch_fifo_rd_num == line_end_num)_0" h1="0" t="e" c1="{ 10 }"/>
+  <tr n="4" z="(ch_fifo_rd_num == line_end_num)_1" h1="0" t="e" c1="{ 11 }"/>
+  </table>
+</div><div class="missing"><a name="cvg3170"/><hr/><table>
+  <tr s="3" x="FE" lnk="__HDL_srcfile_19.htm#263" z="   assign               wr_cmd_full = cmd_full | cmd_data_full ..." c="R" p="0.00" F="1"/>
+  <tr/>
+  <tr z="cmd_full" c="r" r="'_1' not hit" i="Hit '_1'"/>
+  <tr z="cmd_data_full" c="r" r="'_1' not hit" i="Hit '_1'"/>
+  <tr z="wr_resp_full" c="r" r="'_1' not hit" i="Hit '_1'"/>
+  <tr/>
+  <tr n="1" z="cmd_full_0" h1="1" t="e" c1="{ 000 }"/>
+  <tr n="2" z="cmd_full_1" h1="0" t="e" c1="{ 100 }"/>
+  <tr n="3" z="cmd_data_full_0" h1="1" t="e" c1="{ 000 }"/>
+  <tr n="4" z="cmd_data_full_1" h1="0" t="e" c1="{ 010 }"/>
+  <tr n="5" z="wr_resp_full_0" h1="1" t="e" c1="{ 000 }"/>
+  <tr n="6" z="wr_resp_full_1" h1="0" t="e" c1="{ 001 }"/>
+  </table>
+</div><div class="covered"><a name="cvg3172"/><hr/><table>
+  <tr s="3" x="FE" lnk="__HDL_srcfile_19.htm#265" z="   assign               cmd_push = AWVALID &amp; AWREADY;" c="G" p="100.00" F="1"/>
+  <tr/>
+  <tr z="AWVALID" c="g" r="" i=""/>
+  <tr z="AWREADY" c="g" r="" i=""/>
+  <tr/>
+  <tr n="1" z="AWVALID_0" h1="1" t="e" c1="{ 01 }"/>
+  <tr n="2" z="AWVALID_1" h1="1" t="e" c1="{ 11 }"/>
+  <tr n="3" z="AWREADY_0" h1="1" t="e" c1="{ 10 }"/>
+  <tr n="4" z="AWREADY_1" h1="1" t="e" c1="{ 11 }"/>
+  </table>
+</div><div><a name="cvg3174"/><hr/><table>
+  <tr s="3" x="FE" lnk="__HDL_srcfile_19.htm#330" z="   assign               cmd_data_pop  = WVALID &amp; WREADY &amp; WLAST..." c="R" p="33.33" F="1"/>
+  <tr/>
+  <tr z="WVALID" c="r" r="'_0' not hit" i="Hit '_0'"/>
+  <tr z="WREADY" c="r" r="'_0' not hit" i="Hit '_0'"/>
+  <tr z="WLAST" c="g" r="" i=""/>
+  <tr/>
+  <tr n="1" z="WVALID_0" h1="0" t="e" c1="{ 011 }"/>
+  <tr n="2" z="WVALID_1" h1="1" t="e" c1="{ 111 }"/>
+  <tr n="3" z="WREADY_0" h1="0" t="e" c1="{ 101 }"/>
+  <tr n="4" z="WREADY_1" h1="1" t="e" c1="{ 111 }"/>
+  <tr n="5" z="WLAST_0" h1="1" t="e" c1="{ 110 }"/>
+  <tr n="6" z="WLAST_1" h1="1" t="e" c1="{ 111 }"/>
+  </table>
+</div><div><a name="cvg3176"/><hr/><table>
+  <tr s="3" x="FE" lnk="__HDL_srcfile_19.htm#389" z="   assign               WLAST  = WVALID &amp; (rd_in_count == WLEN_..." c="R" p="33.33" F="1"/>
+  <tr/>
+  <tr z="cmd_data_empty" c="r" r="'_1' not hit" i="Hit '_1'"/>
+  <tr z="WVALID" c="r" r="'_0' not hit" i="Hit '_0'"/>
+  <tr z="(rd_in_count == WLEN_data)" c="g" r="" i=""/>
+  <tr/>
+  <tr n="1" z="cmd_data_empty_0" h1="1" t="e" c1="{ 011 }"/>
+  <tr n="2" z="cmd_data_empty_1" h1="0" t="e" c1="{ 111 }"/>
+  <tr n="3" z="WVALID_0" h1="0" t="e" c1="{ 001 }"/>
+  <tr n="4" z="WVALID_1" h1="1" t="e" c1="{ 011 }"/>
+  <tr n="5" z="(rd_in_count == WLEN_data)_0" h1="1" t="e" c1="{ 010 }"/>
+  <tr n="6" z="(rd_in_count == WLEN_data)_1" h1="1" t="e" c1="{ 011 }"/>
+  </table>
+</div><script type="text/javascript" src="../scripts/buildecpage.js"></script>
+  <!-- make sure jumps to last few line nos work -->
+<br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+<br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+<br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+<br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+<br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+<br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+<br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+<br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+<br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+<br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+  
+</body>
+</html>

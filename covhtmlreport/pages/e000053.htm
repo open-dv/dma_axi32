@@ -1,0 +1,375 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html;charset=utf-8"/>
+  <title>Questa Coverage Report</title>
+  <!-- original name: _work.dma_axi32_core0ContentFrame3.htm -->
+  <link rel="StyleSheet" media="print"  href="../css/ucdb2htmlP.css"/>
+  <link rel="StyleSheet" media="screen" href="../css/ucdb2html.css"/>
+  <link rel="StyleSheet" media="screen" href="../css/ucdb2html_newlook.css"/>
+  <script type="text/javascript" src="../scripts/jquery.js"></script>
+  <script type="text/javascript" src="../scripts/showhide.js"></script>
+  
+</head>
+<body id="ucdb2html_detail" onload="showLast()">
+  <h1><span class="strip">Questa</span> Expression Coverage Report</h1>
+  <h3>Scope: /<a href="z000053.htm">work.dma_axi32_core0</a></h3>
+  <!-- use script block so buttons vanish when JavaScript is disabled -->
+  <script type="text/javascript">
+  <!--
+  document.write(
+    '<table class="buttons" cellspacing="2" cellpadding="2"><tr>' +
+       '<td id="showAll" width="100" onclick="showAll()" class="button_on" ' +
+           'title="Display all coverage scopes and bins.">Show All</td>' +
+       '<td id="showCov" width="100" onclick="showCov()" class="button_off" ' +
+           'title="Display only covered scopes and bins.">Show Covered</td>' +
+       '<td id="showMis" width="100" onclick="showMis()" class="button_off" ' +
+           'title="Display only uncovered scopes and bins.">Show Missing</td>' +
+    '</tr></table>');
+  //-->
+  </script>
+  <div><a name="cvg1962"/><hr/><table>
+  <tr s="3" x="FE" lnk="__HDL_srcfile_9.htm#281" z="   assign              rd_ready_joint       = joint_mode &amp; join..." c="R" p="25.00" F="1"/>
+  <tr/>
+  <tr z="joint_mode" c="r" r="No hits" i="Hit '_0' and '_1'"/>
+  <tr z="joint_req" c="r" r="No hits" i="Hit '_0' and '_1'"/>
+  <tr z="rd_ready" c="g" r="" i=""/>
+  <tr z="wr_ready" c="r" r="No hits" i="Hit '_0' and '_1'"/>
+  <tr/>
+  <tr n="1" z="joint_mode_0" h1="0" t="e" c1="{ 011- }"/>
+  <tr n="2" z="joint_mode_1" h1="0" t="e" c1="{ 1110 }"/>
+  <tr n="3" z="joint_req_0" h1="0" t="e" c1="{ 101- }"/>
+  <tr n="4" z="joint_req_1" h1="0" t="e" c1="{ 1110 }"/>
+  <tr n="5" z="rd_ready_0" h1="1" t="e" c1="{ 1101 0-0- -00- }"/>
+  <tr n="6" z="rd_ready_1" h1="1" t="e" c1="{ 1111 0-1- -01- }"/>
+  <tr n="7" z="wr_ready_0" h1="0" t="e" c1="{ 1110 }"/>
+  <tr n="8" z="wr_ready_1" h1="0" t="e" c1="{ 1111 }"/>
+  </table>
+</div><div><a name="cvg1964"/><hr/><table>
+  <tr s="3" x="FE" lnk="__HDL_srcfile_9.htm#282" z="   assign              wr_ready_joint       = joint_mode &amp; join..." c="R" p="25.00" F="1"/>
+  <tr/>
+  <tr z="joint_mode" c="r" r="No hits" i="Hit '_0' and '_1'"/>
+  <tr z="joint_req" c="r" r="No hits" i="Hit '_0' and '_1'"/>
+  <tr z="rd_ready" c="r" r="No hits" i="Hit '_0' and '_1'"/>
+  <tr z="wr_ready" c="g" r="" i=""/>
+  <tr/>
+  <tr n="1" z="joint_mode_0" h1="0" t="e" c1="{ 01-1 }"/>
+  <tr n="2" z="joint_mode_1" h1="0" t="e" c1="{ 1101 }"/>
+  <tr n="3" z="joint_req_0" h1="0" t="e" c1="{ 10-1 }"/>
+  <tr n="4" z="joint_req_1" h1="0" t="e" c1="{ 1101 }"/>
+  <tr n="5" z="rd_ready_0" h1="0" t="e" c1="{ 1101 }"/>
+  <tr n="6" z="rd_ready_1" h1="0" t="e" c1="{ 1111 }"/>
+  <tr n="7" z="wr_ready_0" h1="1" t="e" c1="{ 1110 0--0 -0-0 }"/>
+  <tr n="8" z="wr_ready_1" h1="1" t="e" c1="{ 1111 0--1 -0-1 }"/>
+  </table>
+</div><div class="missing"><a name="cvg1966"/><hr/><table>
+  <tr s="3" x="FE" lnk="__HDL_srcfile_9.htm#285" z="   assign              joint_page_cross     = (rd_page_cross &amp; ..." c="R" p="0.00" F="1"/>
+  <tr/>
+  <tr z="rd_page_cross" c="r" r="'_1' not hit" i="Hit '_1'"/>
+  <tr z="rd_ready" c="r" r="No hits" i="Hit '_0' and '_1'"/>
+  <tr z="wr_page_cross" c="r" r="'_1' not hit" i="Hit '_1'"/>
+  <tr z="wr_ready" c="r" r="No hits" i="Hit '_0' and '_1'"/>
+  <tr/>
+  <tr n="1" z="rd_page_cross_0" h1="1" t="e" c1="{ 010- 01-0 }"/>
+  <tr n="2" z="rd_page_cross_1" h1="0" t="e" c1="{ 110- 11-0 }"/>
+  <tr n="3" z="rd_ready_0" h1="0" t="e" c1="{ 100- 10-0 }"/>
+  <tr n="4" z="rd_ready_1" h1="0" t="e" c1="{ 110- 11-0 }"/>
+  <tr n="5" z="wr_page_cross_0" h1="1" t="e" c1="{ 0-01 -001 }"/>
+  <tr n="6" z="wr_page_cross_1" h1="0" t="e" c1="{ 0-11 -011 }"/>
+  <tr n="7" z="wr_ready_0" h1="0" t="e" c1="{ 0-10 -010 }"/>
+  <tr n="8" z="wr_ready_1" h1="0" t="e" c1="{ 0-11 -011 }"/>
+  </table>
+</div><div><a name="cvg1968"/><hr/><table>
+  <tr s="5" x="FE" lnk="__HDL_srcfile_9.htm#294" z="   assign              wr_burst_start_joint = joint_mode &amp; join..." c="R" p="25.00" F="2"/>
+  <tr/>
+  <tr z="joint_mode" c="r" r="No hits" i="Hit '_0' and '_1' for different outputs"/>
+  <tr z="joint_req" c="r" r="No hits" i="Hit '_0' and '_1' for different outputs"/>
+  <tr z="rd_burst_start" c="r" r="No hits" i="Hit '_0' and '_1' for different outputs"/>
+  <tr z="wr_burst_start" c="g" r="" i=""/>
+  <tr/>
+  <tr n="1" z="joint_mode_0" t="e" h1="0" h2="0" c1="{ 01-0 }" c2="{ 01-1 }"/>
+  <tr n="2" z="joint_mode_1" t="e" h1="0" h2="0" c1="{ 110- }" c2="{ 111- }"/>
+  <tr n="3" z="joint_req_0" t="e" h1="0" h2="0" c1="{ 10-0 }" c2="{ 10-1 }"/>
+  <tr n="4" z="joint_req_1" t="e" h1="0" h2="0" c1="{ 110- }" c2="{ 111- }"/>
+  <tr n="5" z="rd_burst_start_0" t="e" h1="0" h2="E-Miss" c1="{ 110- }" c2="{ Not Testable }"/>
+  <tr n="6" z="rd_burst_start_1" t="e" h1="E-Miss" h2="0" c1="{ Not Testable }" c2="{ 111- }"/>
+  <tr n="7" z="wr_burst_start_0" t="e" h1="1" h2="E-Miss" c1="{ 0--0 -0-0 }" c2="{ Not Testable }"/>
+  <tr n="8" z="wr_burst_start_1" t="e" h1="E-Miss" h2="1" c1="{ Not Testable }" c2="{ 0--1 -0-1 }"/>
+  </table>
+</div><div class="missing"><a name="cvg1970"/><hr/><table>
+  <tr s="5" x="FE" lnk="__HDL_srcfile_9.htm#296" z="   assign              joint_hold           = joint_mux_in_prog..." c="R" p="0.00" F="2"/>
+  <tr/>
+  <tr z="joint_mux_in_prog" c="r" r="'_1' not hit for output ->1" i="Hit '_1' for output ->1"/>
+  <tr z="joint_in_prog" c="r" r="'_1' not hit for output ->1" i="Hit '_1' for output ->1"/>
+  <tr z="joint_req" c="r" r="'_0' hit but '_1' is not hit" i="Hit '_1' for output ->1"/>
+  <tr z="joint_not_in_prog" c="r" r="No hits" i="Hit '_0' and '_1' for different outputs"/>
+  <tr z="joint_stall" c="r" r="'_1' not hit for output ->1" i="Hit '_1' for output ->1"/>
+  <tr z="joint_page_cross" c="r" r="No hits" i="Hit '_0' and '_1' for different outputs"/>
+  <tr/>
+  <tr n="1" z="joint_mux_in_prog_0" t="e" h1="1" h2="E-Miss" c1="{ 00-000 000-0- 0-1000 }" c2="{ Not Testable }"/>
+  <tr n="2" z="joint_mux_in_prog_1" t="e" h1="E-Miss" h2="0" c1="{ Not Testable }" c2="{ 10-000 100-0- 1-1000 }"/>
+  <tr n="3" z="joint_in_prog_0" t="e" h1="1" h2="E-Miss" c1="{ 000-0- }" c2="{ Not Testable }"/>
+  <tr n="4" z="joint_in_prog_1" t="e" h1="E-Miss" h2="0" c1="{ Not Testable }" c2="{ 010-0- }"/>
+  <tr n="5" z="joint_req_0" t="e" h1="1" h2="0" c1="{ 00010- 000-01 }" c2="{ 010000 }"/>
+  <tr n="6" z="joint_req_1" t="e" h1="0" h2="0" c1="{ 011000 }" c2="{ 00110- 001-01 }"/>
+  <tr n="7" z="joint_not_in_prog_0" t="e" h1="0" h2="E-Miss" c1="{ 0-1000 }" c2="{ Not Testable }"/>
+  <tr n="8" z="joint_not_in_prog_1" t="e" h1="E-Miss" h2="0" c1="{ Not Testable }" c2="{ 0-1100 }"/>
+  <tr n="9" z="joint_stall_0" t="e" h1="1" h2="E-Miss" c1="{ 00-000 000-0- 0-1000 }" c2="{ Not Testable }"/>
+  <tr n="10" z="joint_stall_1" t="e" h1="E-Miss" h2="0" c1="{ Not Testable }" c2="{ 00-010 000-1- 0-1010 }"/>
+  <tr n="11" z="joint_page_cross_0" t="e" h1="0" h2="E-Miss" c1="{ 0-1000 }" c2="{ Not Testable }"/>
+  <tr n="12" z="joint_page_cross_1" t="e" h1="E-Miss" h2="0" c1="{ Not Testable }" c2="{ 0-1001 }"/>
+  </table>
+</div><div class="missing"><a name="cvg1972"/><hr/><table>
+  <tr s="3" x="FE" lnk="__HDL_srcfile_9.htm#298" z="   assign              rd_hold_ctrl         = joint_mode ? rd_h..." c="R" p="0.00" F="1"/>
+  <tr/>
+  <tr z="joint_mode" c="r" r="'_1' not hit" i="Hit '_1'"/>
+  <tr z="rd_hold" c="r" r="'_1' not hit" i="Hit '_1'"/>
+  <tr z="joint_hold" c="r" r="No hits" i="Hit '_0' and '_1'"/>
+  <tr z="joint_in_prog" c="r" r="No hits" i="Hit '_0' and '_1'"/>
+  <tr z="wr_hold" c="r" r="No hits" i="Hit '_0' and '_1'"/>
+  <tr/>
+  <tr n="1" z="joint_mode_0" h1="1" t="e" c1="{ 00--- }"/>
+  <tr n="2" z="joint_mode_1" h1="0" t="e" c1="{ 101-- 10-11 }"/>
+  <tr n="3" z="rd_hold_0" h1="1" t="e" c1="{ 1000- 100-0 00--- }"/>
+  <tr n="4" z="rd_hold_1" h1="0" t="e" c1="{ 1100- 110-0 01--- }"/>
+  <tr n="5" z="joint_hold_0" h1="0" t="e" c1="{ 1000- 100-0 }"/>
+  <tr n="6" z="joint_hold_1" h1="0" t="e" c1="{ 1010- 101-0 }"/>
+  <tr n="7" z="joint_in_prog_0" h1="0" t="e" c1="{ 10001 }"/>
+  <tr n="8" z="joint_in_prog_1" h1="0" t="e" c1="{ 10011 }"/>
+  <tr n="9" z="wr_hold_0" h1="0" t="e" c1="{ 10010 }"/>
+  <tr n="10" z="wr_hold_1" h1="0" t="e" c1="{ 10011 }"/>
+  </table>
+</div><div class="missing"><a name="cvg1974"/><hr/><table>
+  <tr s="3" x="FE" lnk="__HDL_srcfile_9.htm#299" z="   assign              rd_hold_joint        = joint_mode &amp; (rd_..." c="R" p="0.00" F="1"/>
+  <tr/>
+  <tr z="joint_mode" c="r" r="'_1' not hit" i="Hit '_1'"/>
+  <tr z="rd_hold_ctrl" c="r" r="No hits" i="Hit '_0' and '_1'"/>
+  <tr z="rd_ctrl_busy" c="r" r="No hits" i="Hit '_0' and '_1'"/>
+  <tr z="wr_ctrl_busy" c="r" r="No hits" i="Hit '_0' and '_1'"/>
+  <tr/>
+  <tr n="1" z="joint_mode_0" h1="1" t="e" c1="{ 01-- 0-1- 0--1 }"/>
+  <tr n="2" z="joint_mode_1" h1="0" t="e" c1="{ 11-- 1-1- 1--1 }"/>
+  <tr n="3" z="rd_hold_ctrl_0" h1="0" t="e" c1="{ 1000 }"/>
+  <tr n="4" z="rd_hold_ctrl_1" h1="0" t="e" c1="{ 1100 }"/>
+  <tr n="5" z="rd_ctrl_busy_0" h1="0" t="e" c1="{ 1000 }"/>
+  <tr n="6" z="rd_ctrl_busy_1" h1="0" t="e" c1="{ 1010 }"/>
+  <tr n="7" z="wr_ctrl_busy_0" h1="0" t="e" c1="{ 1000 }"/>
+  <tr n="8" z="wr_ctrl_busy_1" h1="0" t="e" c1="{ 1001 }"/>
+  </table>
+</div><div class="missing"><a name="cvg1976"/><hr/><table>
+  <tr s="3" x="FE" lnk="__HDL_srcfile_9.htm#300" z="   assign              wr_hold_ctrl         = joint_mode &amp; (joi..." c="R" p="0.00" F="1"/>
+  <tr/>
+  <tr z="joint_mode" c="r" r="No hits" i="Hit '_0' and '_1'"/>
+  <tr z="joint_req" c="r" r="No hits" i="Hit '_0' and '_1'"/>
+  <tr z="joint_in_prog" c="r" r="No hits" i="Hit '_0' and '_1'"/>
+  <tr z="wr_hold" c="r" r="'_1' not hit" i="Hit '_1'"/>
+  <tr z="joint_hold" c="r" r="No hits" i="Hit '_0' and '_1'"/>
+  <tr/>
+  <tr n="1" z="joint_mode_0" h1="0" t="e" c1="{ 01-0- 0-10- }"/>
+  <tr n="2" z="joint_mode_1" h1="0" t="e" c1="{ 11-01 1-101 }"/>
+  <tr n="3" z="joint_req_0" h1="0" t="e" c1="{ 1000- }"/>
+  <tr n="4" z="joint_req_1" h1="0" t="e" c1="{ 11001 }"/>
+  <tr n="5" z="joint_in_prog_0" h1="0" t="e" c1="{ 1000- }"/>
+  <tr n="6" z="joint_in_prog_1" h1="0" t="e" c1="{ 10101 }"/>
+  <tr n="7" z="wr_hold_0" h1="1" t="e" c1="{ 11-00 1-100 0--0- -000- }"/>
+  <tr n="8" z="wr_hold_1" h1="0" t="e" c1="{ 11-10 1-110 0--1- -001- }"/>
+  <tr n="9" z="joint_hold_0" h1="0" t="e" c1="{ 11-00 1-100 }"/>
+  <tr n="10" z="joint_hold_1" h1="0" t="e" c1="{ 11-01 1-101 }"/>
+  </table>
+</div><div><a name="cvg1978"/><hr/><table>
+  <tr s="3" x="FE" lnk="__HDL_srcfile_9.htm#302" z="   assign              rd_ch_go_joint       = rd_ch_go &amp; ch_rd_..." c="Y" p="66.66" F="1"/>
+  <tr/>
+  <tr z="rd_ctrl_busy" c="g" r="" i=""/>
+  <tr z="rd_ch_go" c="r" r="'_0' not hit" i="Hit '_0'"/>
+  <tr z="ch_rd_ready[rd_ch_num]" c="g" r="" i=""/>
+  <tr/>
+  <tr n="1" z="rd_ctrl_busy_0" h1="1" t="e" c1="{ 011 }"/>
+  <tr n="2" z="rd_ctrl_busy_1" h1="1" t="e" c1="{ 111 }"/>
+  <tr n="3" z="rd_ch_go_0" h1="0" t="e" c1="{ 001 }"/>
+  <tr n="4" z="rd_ch_go_1" h1="1" t="e" c1="{ 011 }"/>
+  <tr n="5" z="ch_rd_ready[rd_ch_num]_0" h1="1" t="e" c1="{ 010 }"/>
+  <tr n="6" z="ch_rd_ready[rd_ch_num]_1" h1="1" t="e" c1="{ 011 }"/>
+  </table>
+</div><div class="missing"><a name="cvg1980"/><hr/><table>
+  <tr s="5" x="FE" lnk="__HDL_srcfile_9.htm#303" z="   assign              wr_ch_go_joint       = joint_mode ? (wr_..." c="R" p="0.00" F="2"/>
+  <tr/>
+  <tr z="joint_mode" c="r" r="'_0' hit but '_1' is not hit" i="Hit '_1' for output ->0"/>
+  <tr z="wr_ctrl_busy" c="r" r="No hits" i="Hit '_0' and '_1' for different outputs"/>
+  <tr z="wr_ready" c="r" r="No hits" i="Hit '_0' and '_1' for different outputs"/>
+  <tr z="joint_req" c="r" r="No hits" i="Hit '_0' and '_1' for different outputs"/>
+  <tr z="rd_ch_go_joint" c="r" r="No hits" i="Hit '_0' and '_1' for different outputs"/>
+  <tr z="rd_ch_go" c="r" r="No hits" i="Hit '_0' and '_1' for different outputs"/>
+  <tr z="wr_ch_go" c="r" r="'_0' not hit for output ->0" i="Hit '_0' for output ->0"/>
+  <tr/>
+  <tr n="1" z="joint_mode_0" t="e" h1="0" h2="1" c1="{ 0-----0 }" c2="{ 0-----1 }"/>
+  <tr n="2" z="joint_mode_1" t="e" h1="0" h2="0" c1="{ 11----- 1-0---- 1--10-- 1--0-0- 1--01-- }" c2="{ 10111-- 101001- }"/>
+  <tr n="3" z="wr_ctrl_busy_0" t="e" h1="E-Miss" h2="0" c1="{ Not Testable }" c2="{ 10111-- 101001- }"/>
+  <tr n="4" z="wr_ctrl_busy_1" t="e" h1="0" h2="E-Miss" c1="{ 11111-- 111001- }" c2="{ Not Testable }"/>
+  <tr n="5" z="wr_ready_0" t="e" h1="0" h2="E-Miss" c1="{ 10011-- 100001- }" c2="{ Not Testable }"/>
+  <tr n="6" z="wr_ready_1" t="e" h1="E-Miss" h2="0" c1="{ Not Testable }" c2="{ 10111-- 101001- }"/>
+  <tr n="7" z="joint_req_0" t="e" h1="0" h2="0" c1="{ 10101-- }" c2="{ 101001- }"/>
+  <tr n="8" z="joint_req_1" t="e" h1="0" h2="0" c1="{ 10110-- }" c2="{ 10111-- }"/>
+  <tr n="9" z="rd_ch_go_joint_0" t="e" h1="0" h2="0" c1="{ 10110-- }" c2="{ 101001- }"/>
+  <tr n="10" z="rd_ch_go_joint_1" t="e" h1="0" h2="0" c1="{ 101011- }" c2="{ 10111-- }"/>
+  <tr n="11" z="rd_ch_go_0" t="e" h1="0" h2="E-Miss" c1="{ 101000- }" c2="{ Not Testable }"/>
+  <tr n="12" z="rd_ch_go_1" t="e" h1="E-Miss" h2="0" c1="{ Not Testable }" c2="{ 101001- }"/>
+  <tr n="13" z="wr_ch_go_0" t="e" h1="0" h2="E-Miss" c1="{ 0-----0 }" c2="{ Not Testable }"/>
+  <tr n="14" z="wr_ch_go_1" t="e" h1="E-Miss" h2="1" c1="{ Not Testable }" c2="{ 0-----1 }"/>
+  </table>
+</div><div><a name="cvg1982"/><hr/><table>
+  <tr s="3" x="FE" lnk="__HDL_srcfile_9.htm#305" z="   assign              rd_ch_go_null        = rd_ch_go &amp; (~rd_c..." c="R" p="25.00" F="1"/>
+  <tr/>
+  <tr z="rd_ch_go_joint" c="g" r="" i=""/>
+  <tr z="rd_ch_go" c="r" r="'_0' not hit" i="Hit '_0'"/>
+  <tr z="joint_mode" c="r" r="'_1' not hit" i="Hit '_1'"/>
+  <tr z="wr_ch_go_joint" c="r" r="No hits" i="Hit '_0' and '_1'"/>
+  <tr/>
+  <tr n="1" z="rd_ch_go_joint_0" h1="1" t="e" c1="{ 0110 010- }"/>
+  <tr n="2" z="rd_ch_go_joint_1" h1="1" t="e" c1="{ 1110 110- }"/>
+  <tr n="3" z="rd_ch_go_0" h1="0" t="e" c1="{ 0010 000- }"/>
+  <tr n="4" z="rd_ch_go_1" h1="1" t="e" c1="{ 0110 010- }"/>
+  <tr n="5" z="joint_mode_0" h1="1" t="e" c1="{ 010- }"/>
+  <tr n="6" z="joint_mode_1" h1="0" t="e" c1="{ 0111 }"/>
+  <tr n="7" z="wr_ch_go_joint_0" h1="0" t="e" c1="{ 0110 }"/>
+  <tr n="8" z="wr_ch_go_joint_1" h1="0" t="e" c1="{ 0111 }"/>
+  </table>
+</div><div class="missing"><a name="cvg1984"/><hr/><table>
+  <tr s="5" x="FE" lnk="__HDL_srcfile_9.htm#309" z="   assign              wr_ch_last_joint     = joint_mode ? rd_c..." c="R" p="0.00" F="2"/>
+  <tr/>
+  <tr z="joint_mode" c="r" r="'_0' hit but '_1' is not hit" i="Hit '_1' for output ->0"/>
+  <tr z="rd_ch_last" c="r" r="No hits" i="Hit '_0' and '_1' for different outputs"/>
+  <tr z="wr_ch_last" c="r" r="'_0' not hit for output ->0" i="Hit '_0' for output ->0"/>
+  <tr/>
+  <tr n="1" z="joint_mode_0" t="e" h1="0" h2="1" c1="{ 0-0 }" c2="{ 0-1 }"/>
+  <tr n="2" z="joint_mode_1" t="e" h1="0" h2="0" c1="{ 10- }" c2="{ 11- }"/>
+  <tr n="3" z="rd_ch_last_0" t="e" h1="0" h2="E-Miss" c1="{ 10- }" c2="{ Not Testable }"/>
+  <tr n="4" z="rd_ch_last_1" t="e" h1="E-Miss" h2="0" c1="{ Not Testable }" c2="{ 11- }"/>
+  <tr n="5" z="wr_ch_last_0" t="e" h1="0" h2="E-Miss" c1="{ 0-0 }" c2="{ Not Testable }"/>
+  <tr n="6" z="wr_ch_last_1" t="e" h1="E-Miss" h2="1" c1="{ Not Testable }" c2="{ 0-1 }"/>
+  </table>
+</div><div><a name="cvg1986"/><hr/><table>
+  <tr s="3" x="FE" lnk="__HDL_srcfile_9.htm#311" z="   assign              rd_finish_joint      = joint_mode ? rd_f..." c="R" p="25.00" F="1"/>
+  <tr/>
+  <tr z="joint_mode" c="r" r="'_1' not hit" i="Hit '_1'"/>
+  <tr z="rd_finish" c="r" r="'_1' not hit" i="Hit '_1'"/>
+  <tr z="wr_finish" c="r" r="No hits" i="Hit '_0' and '_1'"/>
+  <tr z="rd_ch_go_null" c="g" r="" i=""/>
+  <tr/>
+  <tr n="1" z="joint_mode_0" h1="1" t="e" c1="{ 00-0 }"/>
+  <tr n="2" z="joint_mode_1" h1="0" t="e" c1="{ 1010 }"/>
+  <tr n="3" z="rd_finish_0" h1="1" t="e" c1="{ 1000 00-0 }"/>
+  <tr n="4" z="rd_finish_1" h1="0" t="e" c1="{ 1100 01-0 }"/>
+  <tr n="5" z="wr_finish_0" h1="0" t="e" c1="{ 1000 }"/>
+  <tr n="6" z="wr_finish_1" h1="0" t="e" c1="{ 1010 }"/>
+  <tr n="7" z="rd_ch_go_null_0" h1="1" t="e" c1="{ 1000 00-0 }"/>
+  <tr n="8" z="rd_ch_go_null_1" h1="1" t="e" c1="{ 1001 00-1 }"/>
+  </table>
+</div><div><a name="cvg1988"/><hr/><table>
+  <tr s="3" x="FE" lnk="__HDL_srcfile_9.htm#313" z="   assign              rd_cmd_full_joint    = joint_mode &amp; join..." c="R" p="25.00" F="1"/>
+  <tr/>
+  <tr z="joint_mode" c="r" r="No hits" i="Hit '_0' and '_1'"/>
+  <tr z="joint_req" c="r" r="No hits" i="Hit '_0' and '_1'"/>
+  <tr z="wr_cmd_full" c="r" r="No hits" i="Hit '_0' and '_1'"/>
+  <tr z="rd_cmd_full" c="g" r="" i=""/>
+  <tr/>
+  <tr n="1" z="joint_mode_0" h1="0" t="e" c1="{ 01-0 }"/>
+  <tr n="2" z="joint_mode_1" h1="0" t="e" c1="{ 1110 }"/>
+  <tr n="3" z="joint_req_0" h1="0" t="e" c1="{ 10-0 }"/>
+  <tr n="4" z="joint_req_1" h1="0" t="e" c1="{ 1110 }"/>
+  <tr n="5" z="wr_cmd_full_0" h1="0" t="e" c1="{ 1100 }"/>
+  <tr n="6" z="wr_cmd_full_1" h1="0" t="e" c1="{ 1110 }"/>
+  <tr n="7" z="rd_cmd_full_0" h1="1" t="e" c1="{ 1100 0--0 -0-0 }"/>
+  <tr n="8" z="rd_cmd_full_1" h1="1" t="e" c1="{ 1101 0--1 -0-1 }"/>
+  </table>
+</div><div class="missing"><a name="cvg1990"/><hr/><table>
+  <tr s="3" x="FE" lnk="__HDL_srcfile_9.htm#314" z="   assign              wr_cmd_full_joint    = joint_mode &amp; join..." c="R" p="0.00" F="1"/>
+  <tr/>
+  <tr z="joint_mode" c="r" r="No hits" i="Hit '_0' and '_1'"/>
+  <tr z="joint_req" c="r" r="No hits" i="Hit '_0' and '_1'"/>
+  <tr z="wr_cmd_full" c="r" r="'_1' not hit" i="Hit '_1'"/>
+  <tr z="rd_cmd_full" c="r" r="No hits" i="Hit '_0' and '_1'"/>
+  <tr/>
+  <tr n="1" z="joint_mode_0" h1="0" t="e" c1="{ 010- }"/>
+  <tr n="2" z="joint_mode_1" h1="0" t="e" c1="{ 1101 }"/>
+  <tr n="3" z="joint_req_0" h1="0" t="e" c1="{ 100- }"/>
+  <tr n="4" z="joint_req_1" h1="0" t="e" c1="{ 1101 }"/>
+  <tr n="5" z="wr_cmd_full_0" h1="1" t="e" c1="{ 1100 0-0- -00- }"/>
+  <tr n="6" z="wr_cmd_full_1" h1="0" t="e" c1="{ 1110 0-1- -01- }"/>
+  <tr n="7" z="rd_cmd_full_0" h1="0" t="e" c1="{ 1100 }"/>
+  <tr n="8" z="rd_cmd_full_1" h1="0" t="e" c1="{ 1101 }"/>
+  </table>
+</div><div><a name="cvg1992"/><hr/><table>
+  <tr s="3" x="FE" lnk="__HDL_srcfile_9.htm#315" z="   assign              rd_cmd_pending_joint = joint_mode ? rd_c..." c="R" p="33.33" F="1"/>
+  <tr/>
+  <tr z="joint_mode" c="r" r="'_1' not hit" i="Hit '_1'"/>
+  <tr z="rd_cmd_pending" c="g" r="" i=""/>
+  <tr z="wr_cmd_pending" c="r" r="No hits" i="Hit '_0' and '_1'"/>
+  <tr/>
+  <tr n="1" z="joint_mode_0" h1="1" t="e" c1="{ 00- }"/>
+  <tr n="2" z="joint_mode_1" h1="0" t="e" c1="{ 101 }"/>
+  <tr n="3" z="rd_cmd_pending_0" h1="1" t="e" c1="{ 100 00- }"/>
+  <tr n="4" z="rd_cmd_pending_1" h1="1" t="e" c1="{ 110 01- }"/>
+  <tr n="5" z="wr_cmd_pending_0" h1="0" t="e" c1="{ 100 }"/>
+  <tr n="6" z="wr_cmd_pending_1" h1="0" t="e" c1="{ 101 }"/>
+  </table>
+</div><div><a name="cvg1994"/><hr/><table>
+  <tr s="3" x="FE" lnk="__HDL_srcfile_9.htm#316" z="   assign              wr_cmd_pending_joint = joint_mode &amp; join..." c="R" p="25.00" F="1"/>
+  <tr/>
+  <tr z="joint_mode" c="r" r="No hits" i="Hit '_0' and '_1'"/>
+  <tr z="joint_req" c="r" r="No hits" i="Hit '_0' and '_1'"/>
+  <tr z="rd_cmd_pending" c="r" r="No hits" i="Hit '_0' and '_1'"/>
+  <tr z="wr_cmd_pending" c="g" r="" i=""/>
+  <tr/>
+  <tr n="1" z="joint_mode_0" h1="0" t="e" c1="{ 01-0 }"/>
+  <tr n="2" z="joint_mode_1" h1="0" t="e" c1="{ 1110 }"/>
+  <tr n="3" z="joint_req_0" h1="0" t="e" c1="{ 10-0 }"/>
+  <tr n="4" z="joint_req_1" h1="0" t="e" c1="{ 1110 }"/>
+  <tr n="5" z="rd_cmd_pending_0" h1="0" t="e" c1="{ 1100 }"/>
+  <tr n="6" z="rd_cmd_pending_1" h1="0" t="e" c1="{ 1110 }"/>
+  <tr n="7" z="wr_cmd_pending_0" h1="1" t="e" c1="{ 1100 0--0 -0-0 }"/>
+  <tr n="8" z="wr_cmd_pending_1" h1="1" t="e" c1="{ 1101 0--1 -0-1 }"/>
+  </table>
+</div><div><a name="cvg1996"/><hr/><table>
+  <tr s="3" x="FE" lnk="__HDL_srcfile_9.htm#318" z="   assign              idle                 = &amp;ch_idle;" c="R" p="12.50" F="1"/>
+  <tr/>
+  <tr z="ch_idle[0]" c="g" r="" i=""/>
+  <tr z="ch_idle[1]" c="r" r="'_0' not hit" i="Hit '_0'"/>
+  <tr z="ch_idle[2]" c="r" r="'_0' not hit" i="Hit '_0'"/>
+  <tr z="ch_idle[3]" c="r" r="'_0' not hit" i="Hit '_0'"/>
+  <tr z="ch_idle[4]" c="r" r="'_0' not hit" i="Hit '_0'"/>
+  <tr z="ch_idle[5]" c="r" r="'_0' not hit" i="Hit '_0'"/>
+  <tr z="ch_idle[6]" c="r" r="'_0' not hit" i="Hit '_0'"/>
+  <tr z="ch_idle[7]" c="r" r="'_0' not hit" i="Hit '_0'"/>
+  <tr/>
+  <tr n="1" z="ch_idle[0]_0" h1="1" t="e" c1="{ 01111111 }"/>
+  <tr n="2" z="ch_idle[0]_1" h1="1" t="e" c1="{ 11111111 }"/>
+  <tr n="3" z="ch_idle[1]_0" h1="0" t="e" c1="{ 10111111 }"/>
+  <tr n="4" z="ch_idle[1]_1" h1="1" t="e" c1="{ 11111111 }"/>
+  <tr n="5" z="ch_idle[2]_0" h1="0" t="e" c1="{ 11011111 }"/>
+  <tr n="6" z="ch_idle[2]_1" h1="1" t="e" c1="{ 11111111 }"/>
+  <tr n="7" z="ch_idle[3]_0" h1="0" t="e" c1="{ 11101111 }"/>
+  <tr n="8" z="ch_idle[3]_1" h1="1" t="e" c1="{ 11111111 }"/>
+  <tr n="9" z="ch_idle[4]_0" h1="0" t="e" c1="{ 11110111 }"/>
+  <tr n="10" z="ch_idle[4]_1" h1="1" t="e" c1="{ 11111111 }"/>
+  <tr n="11" z="ch_idle[5]_0" h1="0" t="e" c1="{ 11111011 }"/>
+  <tr n="12" z="ch_idle[5]_1" h1="1" t="e" c1="{ 11111111 }"/>
+  <tr n="13" z="ch_idle[6]_0" h1="0" t="e" c1="{ 11111101 }"/>
+  <tr n="14" z="ch_idle[6]_1" h1="1" t="e" c1="{ 11111111 }"/>
+  <tr n="15" z="ch_idle[7]_0" h1="0" t="e" c1="{ 11111110 }"/>
+  <tr n="16" z="ch_idle[7]_1" h1="1" t="e" c1="{ 11111111 }"/>
+  </table>
+</div><script type="text/javascript" src="../scripts/buildecpage.js"></script>
+  <!-- make sure jumps to last few line nos work -->
+<br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+<br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+<br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+<br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+<br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+<br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+<br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+<br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+<br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+<br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+  
+</body>
+</html>

@@ -1,0 +1,118 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html;charset=utf-8"/>
+  <title>Questa Coverage Report</title>
+  <!-- original name: _work.dma_axi32_core0_axim_rdataContentFrame3.htm -->
+  <link rel="StyleSheet" media="print"  href="../css/ucdb2htmlP.css"/>
+  <link rel="StyleSheet" media="screen" href="../css/ucdb2html.css"/>
+  <link rel="StyleSheet" media="screen" href="../css/ucdb2html_newlook.css"/>
+  <script type="text/javascript" src="../scripts/jquery.js"></script>
+  <script type="text/javascript" src="../scripts/showhide.js"></script>
+  
+</head>
+<body id="ucdb2html_detail" onload="showLast()">
+  <h1><span class="strip">Questa</span> Expression Coverage Report</h1>
+  <h3>Scope: /<a href="z000039.htm">work.dma_axi32_core0_axim_rdata</a></h3>
+  <!-- use script block so buttons vanish when JavaScript is disabled -->
+  <script type="text/javascript">
+  <!--
+  document.write(
+    '<table class="buttons" cellspacing="2" cellpadding="2"><tr>' +
+       '<td id="showAll" width="100" onclick="showAll()" class="button_on" ' +
+           'title="Display all coverage scopes and bins.">Show All</td>' +
+       '<td id="showCov" width="100" onclick="showCov()" class="button_off" ' +
+           'title="Display only covered scopes and bins.">Show Covered</td>' +
+       '<td id="showMis" width="100" onclick="showMis()" class="button_off" ' +
+           'title="Display only uncovered scopes and bins.">Show Missing</td>' +
+    '</tr></table>');
+  //-->
+  </script>
+  <div class="missing"><a name="cvg4089"/><hr/><table>
+  <tr s="3" x="FE" lnk="__HDL_srcfile_22.htm#85" z="   assign               RREADY_out      = (~rd_clr_line_pre) &amp; ..." c="R" p="0.00" F="1"/>
+  <tr/>
+  <tr z="rd_clr_line_pre" c="r" r="'_1' not hit" i="Hit '_1'"/>
+  <tr z="rd_clr_line_pre_d" c="r" r="'_1' not hit" i="Hit '_1'"/>
+  <tr z="joint_stall" c="r" r="'_1' not hit" i="Hit '_1'"/>
+  <tr/>
+  <tr n="1" z="rd_clr_line_pre_0" h1="1" t="e" c1="{ 000 }"/>
+  <tr n="2" z="rd_clr_line_pre_1" h1="0" t="e" c1="{ 100 }"/>
+  <tr n="3" z="rd_clr_line_pre_d_0" h1="1" t="e" c1="{ 000 }"/>
+  <tr n="4" z="rd_clr_line_pre_d_1" h1="0" t="e" c1="{ 010 }"/>
+  <tr n="5" z="joint_stall_0" h1="1" t="e" c1="{ 000 }"/>
+  <tr n="6" z="joint_stall_1" h1="0" t="e" c1="{ 001 }"/>
+  </table>
+</div><div><a name="cvg4091"/><hr/><table>
+  <tr s="3" x="FE" lnk="__HDL_srcfile_22.htm#89" z="   assign               rd_transfer     = RVALID &amp; RREADY &amp; (~l..." c="Y" p="66.66" F="1"/>
+  <tr/>
+  <tr z="load_cmd_id" c="g" r="" i=""/>
+  <tr z="RVALID" c="g" r="" i=""/>
+  <tr z="RREADY" c="r" r="'_0' not hit" i="Hit '_0'"/>
+  <tr/>
+  <tr n="1" z="load_cmd_id_0" h1="1" t="e" c1="{ 011 }"/>
+  <tr n="2" z="load_cmd_id_1" h1="1" t="e" c1="{ 111 }"/>
+  <tr n="3" z="RVALID_0" h1="1" t="e" c1="{ 001 }"/>
+  <tr n="4" z="RVALID_1" h1="1" t="e" c1="{ 011 }"/>
+  <tr n="5" z="RREADY_0" h1="0" t="e" c1="{ 010 }"/>
+  <tr n="6" z="RREADY_1" h1="1" t="e" c1="{ 011 }"/>
+  </table>
+</div><div><a name="cvg4093"/><hr/><table>
+  <tr s="3" x="FE" lnk="__HDL_srcfile_22.htm#91" z="   assign               rd_burst_cmd    = rd_transfer &amp; RID[5];..." c="Y" p="50.00" F="1"/>
+  <tr/>
+  <tr z="rd_transfer" c="g" r="" i=""/>
+  <tr z="RID[5]" c="r" r="'_0' not hit" i="Hit '_0'"/>
+  <tr/>
+  <tr n="1" z="rd_transfer_0" h1="1" t="e" c1="{ 01 }"/>
+  <tr n="2" z="rd_transfer_1" h1="1" t="e" c1="{ 11 }"/>
+  <tr n="3" z="RID[5]_0" h1="0" t="e" c1="{ 10 }"/>
+  <tr n="4" z="RID[5]_1" h1="1" t="e" c1="{ 11 }"/>
+  </table>
+</div><div class="missing"><a name="cvg4095"/><hr/><table>
+  <tr s="3" x="FE" lnk="__HDL_srcfile_22.htm#102" z="   assign               rd_clr_line_pre = RVALID &amp; RREADY &amp; RLA..." c="R" p="0.00" F="1"/>
+  <tr/>
+  <tr z="RID[3]" c="r" r="No hits" i="Hit '_0' and '_1'"/>
+  <tr z="RVALID" c="r" r="No hits" i="Hit '_0' and '_1'"/>
+  <tr z="RREADY" c="r" r="No hits" i="Hit '_0' and '_1'"/>
+  <tr z="RLAST" c="r" r="No hits" i="Hit '_0' and '_1'"/>
+  <tr z="RID[6]" c="r" r="'_1' not hit" i="Hit '_1'"/>
+  <tr/>
+  <tr n="1" z="RID[3]_0" h1="0" t="e" c1="{ 01111 }"/>
+  <tr n="2" z="RID[3]_1" h1="0" t="e" c1="{ 11111 }"/>
+  <tr n="3" z="RVALID_0" h1="0" t="e" c1="{ 00111 }"/>
+  <tr n="4" z="RVALID_1" h1="0" t="e" c1="{ 01111 }"/>
+  <tr n="5" z="RREADY_0" h1="0" t="e" c1="{ 01011 }"/>
+  <tr n="6" z="RREADY_1" h1="0" t="e" c1="{ 01111 }"/>
+  <tr n="7" z="RLAST_0" h1="0" t="e" c1="{ 01101 }"/>
+  <tr n="8" z="RLAST_1" h1="0" t="e" c1="{ 01111 }"/>
+  <tr n="9" z="RID[6]_0" h1="1" t="e" c1="{ 01110 }"/>
+  <tr n="10" z="RID[6]_1" h1="0" t="e" c1="{ 01111 }"/>
+  </table>
+</div><div><a name="cvg4097"/><hr/><table>
+  <tr s="3" x="FE" lnk="__HDL_srcfile_22.htm#119" z="   assign               load_wr         = RVALID &amp; RREADY &amp; loa..." c="Y" p="66.66" F="1"/>
+  <tr/>
+  <tr z="RVALID" c="g" r="" i=""/>
+  <tr z="RREADY" c="r" r="'_0' not hit" i="Hit '_0'"/>
+  <tr z="load_cmd_id" c="g" r="" i=""/>
+  <tr/>
+  <tr n="1" z="RVALID_0" h1="1" t="e" c1="{ 011 }"/>
+  <tr n="2" z="RVALID_1" h1="1" t="e" c1="{ 111 }"/>
+  <tr n="3" z="RREADY_0" h1="0" t="e" c1="{ 101 }"/>
+  <tr n="4" z="RREADY_1" h1="1" t="e" c1="{ 111 }"/>
+  <tr n="5" z="load_cmd_id_0" h1="1" t="e" c1="{ 110 }"/>
+  <tr n="6" z="load_cmd_id_1" h1="1" t="e" c1="{ 111 }"/>
+  </table>
+</div><script type="text/javascript" src="../scripts/buildecpage.js"></script>
+  <!-- make sure jumps to last few line nos work -->
+<br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+<br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+<br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+<br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+<br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+<br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+<br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+<br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+<br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+<br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+  
+</body>
+</html>

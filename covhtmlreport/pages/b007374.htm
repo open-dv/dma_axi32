@@ -1,0 +1,76 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html;charset=utf-8"/>
+  <title>Questa Coverage Report</title>
+  <!-- original name: _tb_top_u_dma_axi32_wrap_u_dma_axi32_dma_axi32_dual_core_dma_axi32_core0_top_dma_axi32_core0_dma_axi32_core0_channels_dma_axi32_core0_ch0_dma_axi32_ch_reg_dma_axi32_core0_ch_reg_size_rdContentFrame2.htm -->
+  <link rel="StyleSheet" media="print"  href="../css/ucdb2htmlP.css"/>
+  <link rel="StyleSheet" media="screen" href="../css/ucdb2html.css"/>
+  <link rel="StyleSheet" media="screen" href="../css/ucdb2html_newlook.css"/>
+  <script type="text/javascript" src="../scripts/jquery.js"></script>
+  <script type="text/javascript" src="../scripts/showhide.js"></script>
+  
+</head>
+<body id="ucdb2html_detail" onload="showLast()">
+  <h1><span class="strip">Questa</span> Branch Coverage Report</h1>
+  <h3>Scope: /<a href="z000072.htm">tb_top</a>/<a href="z000401.htm">u_dma_axi32_wrap</a>/<a href="z000667.htm">u_dma_axi32</a>/<a href="z000872.htm">dma_axi32_dual_core</a>/<a href="z001769.htm">dma_axi32_core0_top</a>/<a href="z001945.htm">dma_axi32_core0</a>/<a href="z004253.htm">dma_axi32_core0_channels</a>/<a href="z005415.htm">dma_axi32_core0_ch0</a>/<a href="z006058.htm">dma_axi32_ch_reg</a>/<a href="z007374.htm">dma_axi32_core0_ch_reg_size_rd</a></h3>
+  <!-- use script block so buttons vanish when JavaScript is disabled -->
+  <script type="text/javascript">
+  <!--
+  document.write(
+    '<table class="buttons" cellspacing="2" cellpadding="2"><tr>' +
+       '<td id="showAll" width="100" onclick="showAll()" class="button_on" ' +
+           'title="Display all coverage scopes and bins.">Show All</td>' +
+       '<td id="showCov" width="100" onclick="showCov()" class="button_off" ' +
+           'title="Display only covered scopes and bins.">Show Covered</td>' +
+       '<td id="showMis" width="100" onclick="showMis()" class="button_off" ' +
+           'title="Display only uncovered scopes and bins.">Show Missing</td>' +
+    '</tr></table>');
+  //-->
+  </script>
+  <div><a name="cvg7375"/><hr/><table>
+  <tr l="70" lnk="__HDL_srcfile_32.htm#70" z="                 allow_full_burst | LARGE_FIFO ? MAX_BURST  :" c="Y" p="50.00"/><tr/>
+  <tr cr="m" t="I" l="70" lnk="__HDL_srcfile_32.htm#70" z="                 allow_full_burst | LARGE_FIFO ? MAX_BURST  :" h="0" c="r"/>
+  <tr cr="c" t="E" l="71" lnk="__HDL_srcfile_32.htm#71" z="                 joint_flush &amp; SMALL_FIFO      ? HALF_BYTES :" h="7" c="g"/>
+  </table>
+  </div><div><a name="cvg7376"/><hr/><table>
+  <tr l="71" lnk="__HDL_srcfile_32.htm#71" z="                 joint_flush &amp; SMALL_FIFO      ? HALF_BYTES :" c="Y" p="50.00"/><tr/>
+  <tr cr="m" t="I" l="71" lnk="__HDL_srcfile_32.htm#71" z="                 joint_flush &amp; SMALL_FIFO      ? HALF_BYTES :" h="0" c="r"/>
+  <tr cr="c" t="E" l="72" lnk="__HDL_srcfile_32.htm#72" z="                 (burst_max_size_other &gt; HALF_BYTES) &amp; (burst_m..." h="11" c="g"/>
+  </table>
+  </div><div><a name="cvg7377"/><hr/><table>
+  <tr l="73" lnk="__HDL_srcfile_32.htm#73" z="                                                               ..." c="Y" p="50.00"/><tr/>
+  <tr cr="m" t="I" l="73" lnk="__HDL_srcfile_32.htm#73" z="                                                               ..." h="0" c="r"/>
+  <tr cr="c" t="E" l="74" lnk="__HDL_srcfile_32.htm#74" z="                 allow_full_fifo               ? 32 : HALF_BYTE..." h="9" c="g"/>
+  </table>
+  </div><div><a name="cvg7378"/><hr/><table>
+  <tr l="74" lnk="__HDL_srcfile_32.htm#74" z="                 allow_full_fifo               ? 32 : HALF_BYTE..." c="Y" p="50.00"/><tr/>
+  <tr cr="c" t="I" l="74" lnk="__HDL_srcfile_32.htm#74" z="                 allow_full_fifo               ? 32 : HALF_BYTE..." h="7" c="g"/>
+  <tr cr="m" t="E" l="74" lnk="__HDL_srcfile_32.htm#74" z="                 allow_full_fifo               ? 32 : HALF_BYTE..." h="0" c="r"/>
+  </table>
+  </div><div class="covered"><a name="cvg7379"/><hr/><table>
+  <tr l="84" lnk="__HDL_srcfile_32.htm#84" z="     if (reset)" c="G" p="100.00"/><tr/>
+  <tr cr="c" t="I" l="84" lnk="__HDL_srcfile_32.htm#84" z="     if (reset)" h="11" c="g"/>
+  <tr cr="c" t="T" l="86" lnk="__HDL_srcfile_32.htm#86" z="     else if (update)" h="6" c="g"/>
+  <tr cr="c" t="A" l="84" lnk="__HDL_srcfile_32.htm#84" z="     if (reset)" h="226" c="g"/>
+  </table>
+  </div><div><a name="cvg7380"/><hr/><table>
+  <tr l="87" lnk="__HDL_srcfile_32.htm#87" z="       burst_max_size &lt;= #1 burst_max_size_pre &gt; MAX_BURST ? MA..." c="Y" p="50.00"/><tr/>
+  <tr cr="m" t="I" l="87" lnk="__HDL_srcfile_32.htm#87" z="       burst_max_size &lt;= #1 burst_max_size_pre &gt; MAX_BURST ? MA..." h="0" c="r"/>
+  <tr cr="c" t="E" l="87" lnk="__HDL_srcfile_32.htm#87" z="       burst_max_size &lt;= #1 burst_max_size_pre &gt; MAX_BURST ? MA..." h="6" c="g"/>
+  </table>
+  </div><script type="text/javascript" src="../scripts/buildbranchpage.js"></script>
+  <!-- make sure jumps to last few line nos work -->
+<br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+<br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+<br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+<br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+<br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+<br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+<br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+<br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+<br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+<br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+  
+</body>
+</html>

@@ -1,0 +1,462 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html;charset=utf-8"/>
+  <title>Questa Coverage Report</title>
+  <!-- original name: _work.dma_axi32_core0_ch_regContentFrame3.htm -->
+  <link rel="StyleSheet" media="print"  href="../css/ucdb2htmlP.css"/>
+  <link rel="StyleSheet" media="screen" href="../css/ucdb2html.css"/>
+  <link rel="StyleSheet" media="screen" href="../css/ucdb2html_newlook.css"/>
+  <script type="text/javascript" src="../scripts/jquery.js"></script>
+  <script type="text/javascript" src="../scripts/showhide.js"></script>
+  
+</head>
+<body id="ucdb2html_detail" onload="showLast()">
+  <h1><span class="strip">Questa</span> Expression Coverage Report</h1>
+  <h3>Scope: /<a href="z000031.htm">work.dma_axi32_core0_ch_reg</a></h3>
+  <!-- use script block so buttons vanish when JavaScript is disabled -->
+  <script type="text/javascript">
+  <!--
+  document.write(
+    '<table class="buttons" cellspacing="2" cellpadding="2"><tr>' +
+       '<td id="showAll" width="100" onclick="showAll()" class="button_on" ' +
+           'title="Display all coverage scopes and bins.">Show All</td>' +
+       '<td id="showCov" width="100" onclick="showCov()" class="button_off" ' +
+           'title="Display only covered scopes and bins.">Show Covered</td>' +
+       '<td id="showMis" width="100" onclick="showMis()" class="button_off" ' +
+           'title="Display only uncovered scopes and bins.">Show Missing</td>' +
+    '</tr></table>');
+  //-->
+  </script>
+  <div><a name="cvg6088"/><hr/><table>
+  <tr s="3" x="FE" lnk="__HDL_srcfile_30.htm#308" z="   assign             gpwrite     = psel &amp; (~penable) &amp; pwrite;..." c="Y" p="66.66" F="1"/>
+  <tr/>
+  <tr z="penable" c="g" r="" i=""/>
+  <tr z="psel" c="g" r="" i=""/>
+  <tr z="pwrite" c="r" r="'_0' not hit" i="Hit '_0'"/>
+  <tr/>
+  <tr n="1" z="penable_0" h1="1" t="e" c1="{ 011 }"/>
+  <tr n="2" z="penable_1" h1="1" t="e" c1="{ 111 }"/>
+  <tr n="3" z="psel_0" h1="1" t="e" c1="{ 001 }"/>
+  <tr n="4" z="psel_1" h1="1" t="e" c1="{ 011 }"/>
+  <tr n="5" z="pwrite_0" h1="0" t="e" c1="{ 010 }"/>
+  <tr n="6" z="pwrite_1" h1="1" t="e" c1="{ 011 }"/>
+  </table>
+</div><div class="missing"><a name="cvg6090"/><hr/><table>
+  <tr s="3" x="FE" lnk="__HDL_srcfile_30.htm#309" z="   assign             gpread      = psel &amp; (~penable) &amp; (~pwrit..." c="R" p="0.00" F="1"/>
+  <tr/>
+  <tr z="penable" c="r" r="No hits" i="Hit '_0' and '_1'"/>
+  <tr z="pwrite" c="r" r="'_0' not hit" i="Hit '_0'"/>
+  <tr z="psel" c="r" r="'_1' not hit" i="Hit '_1'"/>
+  <tr/>
+  <tr n="1" z="penable_0" h1="0" t="e" c1="{ 001 }"/>
+  <tr n="2" z="penable_1" h1="0" t="e" c1="{ 101 }"/>
+  <tr n="3" z="pwrite_0" h1="0" t="e" c1="{ 001 }"/>
+  <tr n="4" z="pwrite_1" h1="1" t="e" c1="{ 011 }"/>
+  <tr n="5" z="psel_0" h1="1" t="e" c1="{ 000 }"/>
+  <tr n="6" z="psel_1" h1="0" t="e" c1="{ 001 }"/>
+  </table>
+</div><div class="missing"><a name="cvg6092"/><hr/><table>
+  <tr s="3" x="FE" lnk="__HDL_srcfile_30.htm#313" z="   assign             wr_cmd_line0      = gpwrite &amp; gpaddr == C..." c="R" p="0.00" F="1"/>
+  <tr/>
+  <tr z="gpwrite" c="r" r="No hits" i="Hit '_0' and '_1'"/>
+  <tr z="(gpaddr == CMD_LINE0)" c="r" r="'_1' not hit" i="Hit '_1'"/>
+  <tr/>
+  <tr n="1" z="gpwrite_0" h1="0" t="e" c1="{ 01 }"/>
+  <tr n="2" z="gpwrite_1" h1="0" t="e" c1="{ 11 }"/>
+  <tr n="3" z="(gpaddr == CMD_LINE0)_0" h1="1" t="e" c1="{ 10 }"/>
+  <tr n="4" z="(gpaddr == CMD_LINE0)_1" h1="0" t="e" c1="{ 11 }"/>
+  </table>
+</div><div class="missing"><a name="cvg6094"/><hr/><table>
+  <tr s="3" x="FE" lnk="__HDL_srcfile_30.htm#314" z="   assign             wr_cmd_line1      = gpwrite &amp; gpaddr == C..." c="R" p="0.00" F="1"/>
+  <tr/>
+  <tr z="gpwrite" c="r" r="No hits" i="Hit '_0' and '_1'"/>
+  <tr z="(gpaddr == CMD_LINE1)" c="r" r="'_1' not hit" i="Hit '_1'"/>
+  <tr/>
+  <tr n="1" z="gpwrite_0" h1="0" t="e" c1="{ 01 }"/>
+  <tr n="2" z="gpwrite_1" h1="0" t="e" c1="{ 11 }"/>
+  <tr n="3" z="(gpaddr == CMD_LINE1)_0" h1="1" t="e" c1="{ 10 }"/>
+  <tr n="4" z="(gpaddr == CMD_LINE1)_1" h1="0" t="e" c1="{ 11 }"/>
+  </table>
+</div><div class="covered"><a name="cvg6096"/><hr/><table>
+  <tr s="3" x="FE" lnk="__HDL_srcfile_30.htm#315" z="   assign             wr_cmd_line2      = gpwrite &amp; gpaddr == C..." c="G" p="100.00" F="1"/>
+  <tr/>
+  <tr z="gpwrite" c="g" r="" i=""/>
+  <tr z="(gpaddr == CMD_LINE2)" c="g" r="" i=""/>
+  <tr/>
+  <tr n="1" z="gpwrite_0" h1="1" t="e" c1="{ 01 }"/>
+  <tr n="2" z="gpwrite_1" h1="1" t="e" c1="{ 11 }"/>
+  <tr n="3" z="(gpaddr == CMD_LINE2)_0" h1="1" t="e" c1="{ 10 }"/>
+  <tr n="4" z="(gpaddr == CMD_LINE2)_1" h1="1" t="e" c1="{ 11 }"/>
+  </table>
+</div><div class="covered"><a name="cvg6098"/><hr/><table>
+  <tr s="3" x="FE" lnk="__HDL_srcfile_30.htm#316" z="   assign             wr_cmd_line3      = gpwrite &amp; gpaddr == C..." c="G" p="100.00" F="1"/>
+  <tr/>
+  <tr z="gpwrite" c="g" r="" i=""/>
+  <tr z="(gpaddr == CMD_LINE3)" c="g" r="" i=""/>
+  <tr/>
+  <tr n="1" z="gpwrite_0" h1="1" t="e" c1="{ 01 }"/>
+  <tr n="2" z="gpwrite_1" h1="1" t="e" c1="{ 11 }"/>
+  <tr n="3" z="(gpaddr == CMD_LINE3)_0" h1="1" t="e" c1="{ 10 }"/>
+  <tr n="4" z="(gpaddr == CMD_LINE3)_1" h1="1" t="e" c1="{ 11 }"/>
+  </table>
+</div><div class="covered"><a name="cvg6100"/><hr/><table>
+  <tr s="3" x="FE" lnk="__HDL_srcfile_30.htm#317" z="   assign             wr_static_line0   = gpwrite &amp; gpaddr == S..." c="G" p="100.00" F="1"/>
+  <tr/>
+  <tr z="gpwrite" c="g" r="" i=""/>
+  <tr z="(gpaddr == STATIC_LINE0)" c="g" r="" i=""/>
+  <tr/>
+  <tr n="1" z="gpwrite_0" h1="1" t="e" c1="{ 01 }"/>
+  <tr n="2" z="gpwrite_1" h1="1" t="e" c1="{ 11 }"/>
+  <tr n="3" z="(gpaddr == STATIC_LINE0)_0" h1="1" t="e" c1="{ 10 }"/>
+  <tr n="4" z="(gpaddr == STATIC_LINE0)_1" h1="1" t="e" c1="{ 11 }"/>
+  </table>
+</div><div class="covered"><a name="cvg6102"/><hr/><table>
+  <tr s="3" x="FE" lnk="__HDL_srcfile_30.htm#318" z="   assign             wr_static_line1   = gpwrite &amp; gpaddr == S..." c="G" p="100.00" F="1"/>
+  <tr/>
+  <tr z="gpwrite" c="g" r="" i=""/>
+  <tr z="(gpaddr == STATIC_LINE1)" c="g" r="" i=""/>
+  <tr/>
+  <tr n="1" z="gpwrite_0" h1="1" t="e" c1="{ 01 }"/>
+  <tr n="2" z="gpwrite_1" h1="1" t="e" c1="{ 11 }"/>
+  <tr n="3" z="(gpaddr == STATIC_LINE1)_0" h1="1" t="e" c1="{ 10 }"/>
+  <tr n="4" z="(gpaddr == STATIC_LINE1)_1" h1="1" t="e" c1="{ 11 }"/>
+  </table>
+</div><div class="missing"><a name="cvg6104"/><hr/><table>
+  <tr s="3" x="FE" lnk="__HDL_srcfile_30.htm#319" z="   assign             wr_static_line2   = gpwrite &amp; gpaddr == S..." c="R" p="0.00" F="1"/>
+  <tr/>
+  <tr z="gpwrite" c="r" r="No hits" i="Hit '_0' and '_1'"/>
+  <tr z="(gpaddr == STATIC_LINE2)" c="r" r="'_1' not hit" i="Hit '_1'"/>
+  <tr/>
+  <tr n="1" z="gpwrite_0" h1="0" t="e" c1="{ 01 }"/>
+  <tr n="2" z="gpwrite_1" h1="0" t="e" c1="{ 11 }"/>
+  <tr n="3" z="(gpaddr == STATIC_LINE2)_0" h1="1" t="e" c1="{ 10 }"/>
+  <tr n="4" z="(gpaddr == STATIC_LINE2)_1" h1="0" t="e" c1="{ 11 }"/>
+  </table>
+</div><div class="missing"><a name="cvg6106"/><hr/><table>
+  <tr s="3" x="FE" lnk="__HDL_srcfile_30.htm#320" z="   assign             wr_static_line3   = gpwrite &amp; gpaddr == S..." c="R" p="0.00" F="1"/>
+  <tr/>
+  <tr z="gpwrite" c="r" r="No hits" i="Hit '_0' and '_1'"/>
+  <tr z="(gpaddr == STATIC_LINE3)" c="r" r="'_1' not hit" i="Hit '_1'"/>
+  <tr/>
+  <tr n="1" z="gpwrite_0" h1="0" t="e" c1="{ 01 }"/>
+  <tr n="2" z="gpwrite_1" h1="0" t="e" c1="{ 11 }"/>
+  <tr n="3" z="(gpaddr == STATIC_LINE3)_0" h1="1" t="e" c1="{ 10 }"/>
+  <tr n="4" z="(gpaddr == STATIC_LINE3)_1" h1="0" t="e" c1="{ 11 }"/>
+  </table>
+</div><div class="covered"><a name="cvg6108"/><hr/><table>
+  <tr s="3" x="FE" lnk="__HDL_srcfile_30.htm#321" z="   assign             wr_static_line4   = gpwrite &amp; gpaddr == S..." c="G" p="100.00" F="1"/>
+  <tr/>
+  <tr z="gpwrite" c="g" r="" i=""/>
+  <tr z="(gpaddr == STATIC_LINE4)" c="g" r="" i=""/>
+  <tr/>
+  <tr n="1" z="gpwrite_0" h1="1" t="e" c1="{ 01 }"/>
+  <tr n="2" z="gpwrite_1" h1="1" t="e" c1="{ 11 }"/>
+  <tr n="3" z="(gpaddr == STATIC_LINE4)_0" h1="1" t="e" c1="{ 10 }"/>
+  <tr n="4" z="(gpaddr == STATIC_LINE4)_1" h1="1" t="e" c1="{ 11 }"/>
+  </table>
+</div><div class="covered"><a name="cvg6110"/><hr/><table>
+  <tr s="3" x="FE" lnk="__HDL_srcfile_30.htm#322" z="   assign             wr_ch_enable      = gpwrite &amp; gpaddr == C..." c="G" p="100.00" F="1"/>
+  <tr/>
+  <tr z="gpwrite" c="g" r="" i=""/>
+  <tr z="(gpaddr == CH_ENABLE)" c="g" r="" i=""/>
+  <tr/>
+  <tr n="1" z="gpwrite_0" h1="1" t="e" c1="{ 01 }"/>
+  <tr n="2" z="gpwrite_1" h1="1" t="e" c1="{ 11 }"/>
+  <tr n="3" z="(gpaddr == CH_ENABLE)_0" h1="1" t="e" c1="{ 10 }"/>
+  <tr n="4" z="(gpaddr == CH_ENABLE)_1" h1="1" t="e" c1="{ 11 }"/>
+  </table>
+</div><div class="covered"><a name="cvg6112"/><hr/><table>
+  <tr s="3" x="FE" lnk="__HDL_srcfile_30.htm#323" z="   assign             wr_ch_start       = (gpwrite &amp; gpaddr == ..." c="G" p="100.00" F="1"/>
+  <tr/>
+  <tr z="gpwrite" c="g" r="" i=""/>
+  <tr z="(gpaddr == CH_START)" c="g" r="" i=""/>
+  <tr z="ch_start" c="g" r="" i=""/>
+  <tr/>
+  <tr n="1" z="gpwrite_0" h1="1" t="e" c1="{ 010 }"/>
+  <tr n="2" z="gpwrite_1" h1="1" t="e" c1="{ 110 }"/>
+  <tr n="3" z="(gpaddr == CH_START)_0" h1="1" t="e" c1="{ 100 }"/>
+  <tr n="4" z="(gpaddr == CH_START)_1" h1="1" t="e" c1="{ 110 }"/>
+  <tr n="5" z="ch_start_0" h1="1" t="e" c1="{ 0-0 -00 }"/>
+  <tr n="6" z="ch_start_1" h1="1" t="e" c1="{ 0-1 -01 }"/>
+  </table>
+</div><div class="missing"><a name="cvg6114"/><hr/><table>
+  <tr s="3" x="FE" lnk="__HDL_srcfile_30.htm#324" z="   assign             wr_int_rawstat    = gpwrite &amp; gpaddr == I..." c="R" p="0.00" F="1"/>
+  <tr/>
+  <tr z="gpwrite" c="r" r="No hits" i="Hit '_0' and '_1'"/>
+  <tr z="(gpaddr == INT_RAWSTAT)" c="r" r="'_1' not hit" i="Hit '_1'"/>
+  <tr/>
+  <tr n="1" z="gpwrite_0" h1="0" t="e" c1="{ 01 }"/>
+  <tr n="2" z="gpwrite_1" h1="0" t="e" c1="{ 11 }"/>
+  <tr n="3" z="(gpaddr == INT_RAWSTAT)_0" h1="1" t="e" c1="{ 10 }"/>
+  <tr n="4" z="(gpaddr == INT_RAWSTAT)_1" h1="0" t="e" c1="{ 11 }"/>
+  </table>
+</div><div class="missing"><a name="cvg6116"/><hr/><table>
+  <tr s="3" x="FE" lnk="__HDL_srcfile_30.htm#325" z="   assign             wr_int_clear      = gpwrite &amp; gpaddr == I..." c="R" p="0.00" F="1"/>
+  <tr/>
+  <tr z="gpwrite" c="r" r="No hits" i="Hit '_0' and '_1'"/>
+  <tr z="(gpaddr == INT_CLEAR)" c="r" r="'_1' not hit" i="Hit '_1'"/>
+  <tr/>
+  <tr n="1" z="gpwrite_0" h1="0" t="e" c1="{ 01 }"/>
+  <tr n="2" z="gpwrite_1" h1="0" t="e" c1="{ 11 }"/>
+  <tr n="3" z="(gpaddr == INT_CLEAR)_0" h1="1" t="e" c1="{ 10 }"/>
+  <tr n="4" z="(gpaddr == INT_CLEAR)_1" h1="0" t="e" c1="{ 11 }"/>
+  </table>
+</div><div class="missing"><a name="cvg6118"/><hr/><table>
+  <tr s="3" x="FE" lnk="__HDL_srcfile_30.htm#326" z="   assign             wr_int_enable     = gpwrite &amp; gpaddr == I..." c="R" p="0.00" F="1"/>
+  <tr/>
+  <tr z="gpwrite" c="r" r="No hits" i="Hit '_0' and '_1'"/>
+  <tr z="(gpaddr == INT_ENABLE)" c="r" r="'_1' not hit" i="Hit '_1'"/>
+  <tr/>
+  <tr n="1" z="gpwrite_0" h1="0" t="e" c1="{ 01 }"/>
+  <tr n="2" z="gpwrite_1" h1="0" t="e" c1="{ 11 }"/>
+  <tr n="3" z="(gpaddr == INT_ENABLE)_0" h1="1" t="e" c1="{ 10 }"/>
+  <tr n="4" z="(gpaddr == INT_ENABLE)_1" h1="0" t="e" c1="{ 11 }"/>
+  </table>
+</div><div class="covered"><a name="cvg6120"/><hr/><table>
+  <tr s="3" x="FE" lnk="__HDL_srcfile_30.htm#328" z="   assign             load_wr_cycle0 = load_wr &amp; load_wr_cycle ..." c="G" p="100.00" F="1"/>
+  <tr/>
+  <tr z="load_wr" c="g" r="" i=""/>
+  <tr z="(load_wr_cycle == 0)" c="g" r="" i=""/>
+  <tr/>
+  <tr n="1" z="load_wr_0" h1="1" t="e" c1="{ 01 }"/>
+  <tr n="2" z="load_wr_1" h1="1" t="e" c1="{ 11 }"/>
+  <tr n="3" z="(load_wr_cycle == 0)_0" h1="1" t="e" c1="{ 10 }"/>
+  <tr n="4" z="(load_wr_cycle == 0)_1" h1="1" t="e" c1="{ 11 }"/>
+  </table>
+</div><div><a name="cvg6122"/><hr/><table>
+  <tr s="3" x="FE" lnk="__HDL_srcfile_30.htm#329" z="   assign             load_wr_cycle1 = load_wr &amp; load_wr_cycle ..." c="Y" p="50.00" F="1"/>
+  <tr/>
+  <tr z="load_wr" c="r" r="'_0' not hit" i="Hit '_0'"/>
+  <tr z="(load_wr_cycle == 1)" c="g" r="" i=""/>
+  <tr/>
+  <tr n="1" z="load_wr_0" h1="0" t="e" c1="{ 01 }"/>
+  <tr n="2" z="load_wr_1" h1="1" t="e" c1="{ 11 }"/>
+  <tr n="3" z="(load_wr_cycle == 1)_0" h1="1" t="e" c1="{ 10 }"/>
+  <tr n="4" z="(load_wr_cycle == 1)_1" h1="1" t="e" c1="{ 11 }"/>
+  </table>
+</div><div><a name="cvg6124"/><hr/><table>
+  <tr s="3" x="FE" lnk="__HDL_srcfile_30.htm#330" z="   assign             load_wr_cycle2 = load_wr &amp; load_wr_cycle ..." c="Y" p="50.00" F="1"/>
+  <tr/>
+  <tr z="load_wr" c="r" r="'_0' not hit" i="Hit '_0'"/>
+  <tr z="(load_wr_cycle == 2)" c="g" r="" i=""/>
+  <tr/>
+  <tr n="1" z="load_wr_0" h1="0" t="e" c1="{ 01 }"/>
+  <tr n="2" z="load_wr_1" h1="1" t="e" c1="{ 11 }"/>
+  <tr n="3" z="(load_wr_cycle == 2)_0" h1="1" t="e" c1="{ 10 }"/>
+  <tr n="4" z="(load_wr_cycle == 2)_1" h1="1" t="e" c1="{ 11 }"/>
+  </table>
+</div><div><a name="cvg6126"/><hr/><table>
+  <tr s="3" x="FE" lnk="__HDL_srcfile_30.htm#331" z="   assign             load_wr_cycle3 = load_wr &amp; load_wr_cycle ..." c="Y" p="50.00" F="1"/>
+  <tr/>
+  <tr z="load_wr" c="r" r="'_0' not hit" i="Hit '_0'"/>
+  <tr z="(load_wr_cycle == 3)" c="g" r="" i=""/>
+  <tr/>
+  <tr n="1" z="load_wr_0" h1="0" t="e" c1="{ 01 }"/>
+  <tr n="2" z="load_wr_1" h1="1" t="e" c1="{ 11 }"/>
+  <tr n="3" z="(load_wr_cycle == 3)_0" h1="1" t="e" c1="{ 10 }"/>
+  <tr n="4" z="(load_wr_cycle == 3)_1" h1="1" t="e" c1="{ 11 }"/>
+  </table>
+</div><div class="missing"><a name="cvg6128"/><hr/><table>
+  <tr s="3" x="FE" lnk="__HDL_srcfile_30.htm#485" z="   assign allow_full_fifo    = rd_allow_full_fifo &amp; wr_allow_fu..." c="R" p="0.00" F="1"/>
+  <tr/>
+  <tr z="rd_allow_full_fifo" c="r" r="'_0' not hit" i="Hit '_0'"/>
+  <tr z="wr_allow_full_fifo" c="r" r="'_0' not hit" i="Hit '_0'"/>
+  <tr/>
+  <tr n="1" z="rd_allow_full_fifo_0" h1="0" t="e" c1="{ 01 }"/>
+  <tr n="2" z="rd_allow_full_fifo_1" h1="1" t="e" c1="{ 11 }"/>
+  <tr n="3" z="wr_allow_full_fifo_0" h1="0" t="e" c1="{ 10 }"/>
+  <tr n="4" z="wr_allow_full_fifo_1" h1="1" t="e" c1="{ 11 }"/>
+  </table>
+</div><div class="missing"><a name="cvg6130"/><hr/><table>
+  <tr s="3" x="FE" lnk="__HDL_srcfile_30.htm#490" z="   assign allow_joint_burst  = joint &amp; (~joint_flush) &amp; (~page_..." c="R" p="0.00" F="1"/>
+  <tr/>
+  <tr z="joint_flush" c="r" r="No hits" i="Hit '_0' and '_1'"/>
+  <tr z="page_cross" c="r" r="No hits" i="Hit '_0' and '_1'"/>
+  <tr z="joint_cross" c="r" r="No hits" i="Hit '_0' and '_1'"/>
+  <tr z="joint" c="r" r="'_1' not hit" i="Hit '_1'"/>
+  <tr/>
+  <tr n="1" z="joint_flush_0" h1="0" t="e" c1="{ 0001 }"/>
+  <tr n="2" z="joint_flush_1" h1="0" t="e" c1="{ 1001 }"/>
+  <tr n="3" z="page_cross_0" h1="0" t="e" c1="{ 0001 }"/>
+  <tr n="4" z="page_cross_1" h1="0" t="e" c1="{ 0101 }"/>
+  <tr n="5" z="joint_cross_0" h1="0" t="e" c1="{ 0001 }"/>
+  <tr n="6" z="joint_cross_1" h1="0" t="e" c1="{ 0011 }"/>
+  <tr n="7" z="joint_0" h1="1" t="e" c1="{ 0000 }"/>
+  <tr n="8" z="joint_1" h1="0" t="e" c1="{ 0001 }"/>
+  </table>
+</div><div><a name="cvg6132"/><hr/><table>
+  <tr s="3" x="FE" lnk="__HDL_srcfile_30.htm#494" z="   assign burst_max_size_update_pre = ch_update | ch_update_d |..." c="Y" p="66.66" F="1"/>
+  <tr/>
+  <tr z="ch_update" c="g" r="" i=""/>
+  <tr z="ch_update_d" c="g" r="" i=""/>
+  <tr z="joint" c="r" r="'_1' not hit" i="Hit '_1'"/>
+  <tr/>
+  <tr n="1" z="ch_update_0" h1="1" t="e" c1="{ 000 }"/>
+  <tr n="2" z="ch_update_1" h1="1" t="e" c1="{ 100 }"/>
+  <tr n="3" z="ch_update_d_0" h1="1" t="e" c1="{ 000 }"/>
+  <tr n="4" z="ch_update_d_1" h1="1" t="e" c1="{ 010 }"/>
+  <tr n="5" z="joint_0" h1="1" t="e" c1="{ 000 }"/>
+  <tr n="6" z="joint_1" h1="0" t="e" c1="{ 001 }"/>
+  </table>
+</div><div class="missing"><a name="cvg6134"/><hr/><table>
+  <tr s="3" x="FE" lnk="__HDL_srcfile_30.htm#545" z="       simple_mem &lt;= #1 (rd_periph_num == 'd0) &amp; (wr_periph_num..." c="R" p="0.00" F="1"/>
+  <tr/>
+  <tr z="allow_line_cmd" c="r" r="'_1' not hit" i="Hit '_1'"/>
+  <tr z="(rd_periph_num == 0)" c="r" r="'_0' not hit" i="Hit '_0'"/>
+  <tr z="(wr_periph_num == 0)" c="r" r="'_0' not hit" i="Hit '_0'"/>
+  <tr/>
+  <tr n="1" z="allow_line_cmd_0" h1="1" t="e" c1="{ 011 }"/>
+  <tr n="2" z="allow_line_cmd_1" h1="0" t="e" c1="{ 111 }"/>
+  <tr n="3" z="(rd_periph_num == 0)_0" h1="0" t="e" c1="{ 001 }"/>
+  <tr n="4" z="(rd_periph_num == 0)_1" h1="1" t="e" c1="{ 011 }"/>
+  <tr n="5" z="(wr_periph_num == 0)_0" h1="0" t="e" c1="{ 010 }"/>
+  <tr n="6" z="(wr_periph_num == 0)_1" h1="1" t="e" c1="{ 011 }"/>
+  </table>
+</div><div class="missing"><a name="cvg6136"/><hr/><table>
+  <tr s="3" x="FE" lnk="__HDL_srcfile_30.htm#547" z="   assign joint     = joint_mode &amp; joint_reg &amp; simple_mem &amp; 1'b..." c="R" p="0.00" F="1"/>
+  <tr/>
+  <tr z="joint_mode" c="r" r="'_1' not hit" i="Hit '_1'"/>
+  <tr z="joint_reg" c="r" r="No hits" i="Hit '_0' and '_1'"/>
+  <tr z="simple_mem" c="r" r="No hits" i="Hit '_0' and '_1'"/>
+  <tr/>
+  <tr n="1" z="joint_mode_0" h1="1" t="e" c1="{ 011 }"/>
+  <tr n="2" z="joint_mode_1" h1="0" t="e" c1="{ 111 }"/>
+  <tr n="3" z="joint_reg_0" h1="0" t="e" c1="{ 101 }"/>
+  <tr n="4" z="joint_reg_1" h1="0" t="e" c1="{ 111 }"/>
+  <tr n="5" z="simple_mem_0" h1="0" t="e" c1="{ 110 }"/>
+  <tr n="6" z="simple_mem_1" h1="0" t="e" c1="{ 111 }"/>
+  </table>
+</div><div><a name="cvg6138"/><hr/><table>
+  <tr s="3" x="FE" lnk="__HDL_srcfile_30.htm#657" z="   assign ch_update_pre = wr_ch_start | load_wr_last | ch_retry..." c="Y" p="66.66" F="1"/>
+  <tr/>
+  <tr z="wr_ch_start" c="g" r="" i=""/>
+  <tr z="load_wr_last" c="g" r="" i=""/>
+  <tr z="ch_retry" c="r" r="'_1' not hit" i="Hit '_1'"/>
+  <tr/>
+  <tr n="1" z="wr_ch_start_0" h1="1" t="e" c1="{ 000 }"/>
+  <tr n="2" z="wr_ch_start_1" h1="1" t="e" c1="{ 100 }"/>
+  <tr n="3" z="load_wr_last_0" h1="1" t="e" c1="{ 000 }"/>
+  <tr n="4" z="load_wr_last_1" h1="1" t="e" c1="{ 010 }"/>
+  <tr n="5" z="ch_retry_0" h1="1" t="e" c1="{ 000 }"/>
+  <tr n="6" z="ch_retry_1" h1="0" t="e" c1="{ 001 }"/>
+  </table>
+</div><div><a name="cvg6140"/><hr/><table>
+  <tr s="3" x="FE" lnk="__HDL_srcfile_30.htm#669" z="   assign load_req       = (ch_enable &amp; ch_end &amp; (~cmd_last)) |..." c="R" p="40.00" F="1"/>
+  <tr/>
+  <tr z="cmd_last" c="r" r="No hits" i="Hit '_0' and '_1'"/>
+  <tr z="ch_enable" c="r" r="No hits" i="Hit '_0' and '_1'"/>
+  <tr z="ch_end" c="r" r="'_1' not hit" i="Hit '_1'"/>
+  <tr z="ch_update" c="g" r="" i=""/>
+  <tr z="(x_size == 0)" c="g" r="" i=""/>
+  <tr/>
+  <tr n="1" z="cmd_last_0" h1="0" t="e" c1="{ 0110- 011-0 }"/>
+  <tr n="2" z="cmd_last_1" h1="0" t="e" c1="{ 1110- 111-0 }"/>
+  <tr n="3" z="ch_enable_0" h1="0" t="e" c1="{ 0010- 001-0 }"/>
+  <tr n="4" z="ch_enable_1" h1="0" t="e" c1="{ 0110- 011-0 }"/>
+  <tr n="5" z="ch_end_0" h1="1" t="e" c1="{ 0100- 010-0 }"/>
+  <tr n="6" z="ch_end_1" h1="0" t="e" c1="{ 0110- 011-0 }"/>
+  <tr n="7" z="ch_update_0" h1="1" t="e" c1="{ 1--01 -0-01 --001 }"/>
+  <tr n="8" z="ch_update_1" h1="1" t="e" c1="{ 1--11 -0-11 --011 }"/>
+  <tr n="9" z="(x_size == 0)_0" h1="1" t="e" c1="{ 1--10 -0-10 --010 }"/>
+  <tr n="10" z="(x_size == 0)_1" h1="1" t="e" c1="{ 1--11 -0-11 --011 }"/>
+  </table>
+</div><div class="missing"><a name="cvg6142"/><hr/><table>
+  <tr s="3" x="FE" lnk="__HDL_srcfile_30.htm#672" z="   assign ch_end         = rd_ch_end &amp; wr_ch_end &amp; wr_clr_last ..." c="R" p="0.00" F="1"/>
+  <tr/>
+  <tr z="ch_retry_wait" c="r" r="No hits" i="Hit '_0' and '_1'"/>
+  <tr z="rd_ch_end" c="r" r="No hits" i="Hit '_0' and '_1'"/>
+  <tr z="wr_ch_end" c="r" r="No hits" i="Hit '_0' and '_1'"/>
+  <tr z="wr_clr_last" c="r" r="No hits" i="Hit '_0' and '_1'"/>
+  <tr/>
+  <tr n="1" z="ch_retry_wait_0" h1="0" t="e" c1="{ 0111 }"/>
+  <tr n="2" z="ch_retry_wait_1" h1="0" t="e" c1="{ 1111 }"/>
+  <tr n="3" z="rd_ch_end_0" h1="0" t="e" c1="{ 0011 }"/>
+  <tr n="4" z="rd_ch_end_1" h1="0" t="e" c1="{ 0111 }"/>
+  <tr n="5" z="wr_ch_end_0" h1="0" t="e" c1="{ 0101 }"/>
+  <tr n="6" z="wr_ch_end_1" h1="0" t="e" c1="{ 0111 }"/>
+  <tr n="7" z="wr_clr_last_0" h1="0" t="e" c1="{ 0110 }"/>
+  <tr n="8" z="wr_clr_last_1" h1="0" t="e" c1="{ 0111 }"/>
+  </table>
+</div><div class="missing"><a name="cvg6144"/><hr/><table>
+  <tr s="3" x="FE" lnk="__HDL_srcfile_30.htm#674" z="   assign ch_end_int     = ch_enable &amp; ch_end &amp; cmd_set_int;" c="R" p="0.00" F="1"/>
+  <tr/>
+  <tr z="ch_enable" c="r" r="No hits" i="Hit '_0' and '_1'"/>
+  <tr z="ch_end" c="r" r="No hits" i="Hit '_0' and '_1'"/>
+  <tr z="cmd_set_int" c="r" r="No hits" i="Hit '_0' and '_1'"/>
+  <tr/>
+  <tr n="1" z="ch_enable_0" h1="0" t="e" c1="{ 011 }"/>
+  <tr n="2" z="ch_enable_1" h1="0" t="e" c1="{ 111 }"/>
+  <tr n="3" z="ch_end_0" h1="0" t="e" c1="{ 101 }"/>
+  <tr n="4" z="ch_end_1" h1="0" t="e" c1="{ 111 }"/>
+  <tr n="5" z="cmd_set_int_0" h1="0" t="e" c1="{ 110 }"/>
+  <tr n="6" z="cmd_set_int_1" h1="0" t="e" c1="{ 111 }"/>
+  </table>
+</div><div><a name="cvg6146"/><hr/><table>
+  <tr s="3" x="FE" lnk="__HDL_srcfile_30.htm#675" z="   assign ch_rd_active   = ch_enable &amp; (rd_ch_in_prog | load_re..." c="R" p="33.33" F="1"/>
+  <tr/>
+  <tr z="ch_enable" c="r" r="'_0' not hit" i="Hit '_0'"/>
+  <tr z="rd_ch_in_prog" c="g" r="" i=""/>
+  <tr z="load_req_in_prog" c="r" r="'_1' not hit" i="Hit '_1'"/>
+  <tr/>
+  <tr n="1" z="ch_enable_0" h1="0" t="e" c1="{ 01- 0-1 }"/>
+  <tr n="2" z="ch_enable_1" h1="1" t="e" c1="{ 11- 1-1 }"/>
+  <tr n="3" z="rd_ch_in_prog_0" h1="1" t="e" c1="{ 100 }"/>
+  <tr n="4" z="rd_ch_in_prog_1" h1="1" t="e" c1="{ 110 }"/>
+  <tr n="5" z="load_req_in_prog_0" h1="1" t="e" c1="{ 100 }"/>
+  <tr n="6" z="load_req_in_prog_1" h1="0" t="e" c1="{ 101 }"/>
+  </table>
+</div><div><a name="cvg6148"/><hr/><table>
+  <tr s="3" x="FE" lnk="__HDL_srcfile_30.htm#676" z="   assign ch_wr_active   = ch_enable &amp; wr_ch_in_prog;" c="Y" p="50.00" F="1"/>
+  <tr/>
+  <tr z="ch_enable" c="r" r="'_0' not hit" i="Hit '_0'"/>
+  <tr z="wr_ch_in_prog" c="g" r="" i=""/>
+  <tr/>
+  <tr n="1" z="ch_enable_0" h1="0" t="e" c1="{ 01 }"/>
+  <tr n="2" z="ch_enable_1" h1="1" t="e" c1="{ 11 }"/>
+  <tr n="3" z="wr_ch_in_prog_0" h1="1" t="e" c1="{ 10 }"/>
+  <tr n="4" z="wr_ch_in_prog_1" h1="1" t="e" c1="{ 11 }"/>
+  </table>
+</div><div class="missing"><a name="cvg6150"/><hr/><table>
+  <tr s="3" x="FE" lnk="__HDL_srcfile_30.htm#678" z="   assign ch_end_set     = |int_counter;" c="R" p="0.00" F="1"/>
+  <tr/>
+  <tr z="int_counter[0]" c="r" r="'_1' not hit" i="Hit '_1'"/>
+  <tr z="int_counter[1]" c="r" r="'_1' not hit" i="Hit '_1'"/>
+  <tr z="int_counter[2]" c="r" r="'_1' not hit" i="Hit '_1'"/>
+  <tr z="int_counter[3]" c="r" r="'_1' not hit" i="Hit '_1'"/>
+  <tr/>
+  <tr n="1" z="int_counter[0]_0" h1="1" t="e" c1="{ 0000 }"/>
+  <tr n="2" z="int_counter[0]_1" h1="0" t="e" c1="{ 1000 }"/>
+  <tr n="3" z="int_counter[1]_0" h1="1" t="e" c1="{ 0000 }"/>
+  <tr n="4" z="int_counter[1]_1" h1="0" t="e" c1="{ 0100 }"/>
+  <tr n="5" z="int_counter[2]_0" h1="1" t="e" c1="{ 0000 }"/>
+  <tr n="6" z="int_counter[2]_1" h1="0" t="e" c1="{ 0010 }"/>
+  <tr n="7" z="int_counter[3]_0" h1="1" t="e" c1="{ 0000 }"/>
+  <tr n="8" z="int_counter[3]_1" h1="0" t="e" c1="{ 0001 }"/>
+  </table>
+</div><div class="missing"><a name="cvg6152"/><hr/><table>
+  <tr s="3" x="FE" lnk="__HDL_srcfile_30.htm#679" z="   assign ch_end_clear   = wr_int_clear &amp; pwdata[0];" c="R" p="0.00" F="1"/>
+  <tr/>
+  <tr z="wr_int_clear" c="r" r="'_1' not hit" i="Hit '_1'"/>
+  <tr z="pwdata[0]" c="r" r="No hits" i="Hit '_0' and '_1'"/>
+  <tr/>
+  <tr n="1" z="wr_int_clear_0" h1="1" t="e" c1="{ 01 }"/>
+  <tr n="2" z="wr_int_clear_1" h1="0" t="e" c1="{ 11 }"/>
+  <tr n="3" z="pwdata[0]_0" h1="0" t="e" c1="{ 10 }"/>
+  <tr n="4" z="pwdata[0]_1" h1="0" t="e" c1="{ 11 }"/>
+  </table>
+</div><script type="text/javascript" src="../scripts/buildecpage.js"></script>
+  <!-- make sure jumps to last few line nos work -->
+<br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+<br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+<br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+<br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+<br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+<br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+<br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+<br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+<br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+<br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+  
+</body>
+</html>

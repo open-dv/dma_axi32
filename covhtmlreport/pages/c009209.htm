@@ -1,0 +1,84 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html;charset=utf-8"/>
+  <title>Questa Coverage Report</title>
+  <!-- original name: _tb_top_u_dma_axi32_wrap_u_dma_axi32_dma_axi32_dual_core_dma_axi32_core0_top_dma_axi32_core0_dma_axi32_core0_channels_dma_axi32_core0_ch0_dma_axi32_ch_fifo_ctrl_dma_axi32_ch_rd_slicerContentFrame4.htm -->
+  <link rel="StyleSheet" media="print"  href="../css/ucdb2htmlP.css"/>
+  <link rel="StyleSheet" media="screen" href="../css/ucdb2html.css"/>
+  <link rel="StyleSheet" media="screen" href="../css/ucdb2html_newlook.css"/>
+  <script type="text/javascript" src="../scripts/jquery.js"></script>
+  <script type="text/javascript" src="../scripts/showhide.js"></script>
+  
+</head>
+<body id="ucdb2html_detail" onload="showLast()">
+  <h1><span class="strip">Questa</span> Condition Coverage Report</h1>
+  <h3>Scope: /<a href="z000072.htm">tb_top</a>/<a href="z000401.htm">u_dma_axi32_wrap</a>/<a href="z000667.htm">u_dma_axi32</a>/<a href="z000872.htm">dma_axi32_dual_core</a>/<a href="z001769.htm">dma_axi32_core0_top</a>/<a href="z001945.htm">dma_axi32_core0</a>/<a href="z004253.htm">dma_axi32_core0_channels</a>/<a href="z005415.htm">dma_axi32_core0_ch0</a>/<a href="z008567.htm">dma_axi32_ch_fifo_ctrl</a>/<a href="z009209.htm">dma_axi32_ch_rd_slicer</a></h3>
+  <!-- use script block so buttons vanish when JavaScript is disabled -->
+  <script type="text/javascript">
+  <!--
+  document.write(
+    '<table class="buttons" cellspacing="2" cellpadding="2"><tr>' +
+       '<td id="showAll" width="100" onclick="showAll()" class="button_on" ' +
+           'title="Display all coverage scopes and bins.">Show All</td>' +
+       '<td id="showCov" width="100" onclick="showCov()" class="button_off" ' +
+           'title="Display only covered scopes and bins.">Show Covered</td>' +
+       '<td id="showMis" width="100" onclick="showMis()" class="button_off" ' +
+           'title="Display only uncovered scopes and bins.">Show Missing</td>' +
+    '</tr></table>');
+  //-->
+  </script>
+  <div class="missing"><a name="cvg9222"/><hr/><table>
+  <tr s="3" x="FC" lnk="__HDL_srcfile_46.htm#92" z="                  (~wr_incr) &amp; wr_single ? rd_align - rd_ptr[2-..." c="R" p="0.00" F="1"/>
+  <tr/>
+  <tr z="wr_incr" c="r" r="No hits" i="Hit '_0' and '_1'"/>
+  <tr z="wr_single" c="r" r="No hits" i="Hit '_0' and '_1'"/>
+  <tr/>
+  <tr n="1" z="wr_incr_0" h1="0" t="c" c1="{ 01 }"/>
+  <tr n="2" z="wr_incr_1" h1="0" t="c" c1="{ 11 }"/>
+  <tr n="3" z="wr_single_0" h1="0" t="c" c1="{ 00 }"/>
+  <tr n="4" z="wr_single_1" h1="0" t="c" c1="{ 01 }"/>
+  </table>
+</div><div><a name="cvg9224"/><hr/><table>
+  <tr s="3" x="FC" lnk="__HDL_srcfile_46.htm#144" z="     else if (fifo_rd | (|next_rsize))" c="R" p="25.00" F="1"/>
+  <tr/>
+  <tr z="fifo_rd" c="g" r="" i=""/>
+  <tr z="next_rsize[0]" c="r" r="'_1' not hit" i="Hit '_1'"/>
+  <tr z="next_rsize[1]" c="r" r="'_1' not hit" i="Hit '_1'"/>
+  <tr z="next_rsize[2]" c="r" r="'_1' not hit" i="Hit '_1'"/>
+  <tr/>
+  <tr n="1" z="fifo_rd_0" h1="1" t="c" c1="{ 0000 }"/>
+  <tr n="2" z="fifo_rd_1" h1="1" t="c" c1="{ 1000 }"/>
+  <tr n="3" z="next_rsize[0]_0" h1="1" t="c" c1="{ 0000 }"/>
+  <tr n="4" z="next_rsize[0]_1" h1="0" t="c" c1="{ 0100 }"/>
+  <tr n="5" z="next_rsize[1]_0" h1="1" t="c" c1="{ 0000 }"/>
+  <tr n="6" z="next_rsize[1]_1" h1="0" t="c" c1="{ 0010 }"/>
+  <tr n="7" z="next_rsize[2]_0" h1="1" t="c" c1="{ 0000 }"/>
+  <tr n="8" z="next_rsize[2]_1" h1="0" t="c" c1="{ 0001 }"/>
+  </table>
+</div><div class="covered"><a name="cvg9226"/><hr/><table>
+  <tr s="3" x="FC" lnk="__HDL_srcfile_46.htm#159" z="     else if (fifo_rd | slice_rd)" c="G" p="100.00" F="1"/>
+  <tr/>
+  <tr z="fifo_rd" c="g" r="" i=""/>
+  <tr z="slice_rd" c="g" r="" i=""/>
+  <tr/>
+  <tr n="1" z="fifo_rd_0" h1="1" t="c" c1="{ 00 }"/>
+  <tr n="2" z="fifo_rd_1" h1="1" t="c" c1="{ 10 }"/>
+  <tr n="3" z="slice_rd_0" h1="1" t="c" c1="{ 00 }"/>
+  <tr n="4" z="slice_rd_1" h1="1" t="c" c1="{ 01 }"/>
+  </table>
+</div><script type="text/javascript" src="../scripts/buildecpage.js"></script>
+  <!-- make sure jumps to last few line nos work -->
+<br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+<br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+<br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+<br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+<br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+<br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+<br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+<br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+<br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+<br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+  
+</body>
+</html>

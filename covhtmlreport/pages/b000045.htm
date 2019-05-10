@@ -1,0 +1,136 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html;charset=utf-8"/>
+  <title>Questa Coverage Report</title>
+  <!-- original name: _work.dma_axi32_core0_axim_wdataContentFrame2.htm -->
+  <link rel="StyleSheet" media="print"  href="../css/ucdb2htmlP.css"/>
+  <link rel="StyleSheet" media="screen" href="../css/ucdb2html.css"/>
+  <link rel="StyleSheet" media="screen" href="../css/ucdb2html_newlook.css"/>
+  <script type="text/javascript" src="../scripts/jquery.js"></script>
+  <script type="text/javascript" src="../scripts/showhide.js"></script>
+  
+</head>
+<body id="ucdb2html_detail" onload="showLast()">
+  <h1><span class="strip">Questa</span> Branch Coverage Report</h1>
+  <h3>Scope: /<a href="z000045.htm">work.dma_axi32_core0_axim_wdata</a></h3>
+  <!-- use script block so buttons vanish when JavaScript is disabled -->
+  <script type="text/javascript">
+  <!--
+  document.write(
+    '<table class="buttons" cellspacing="2" cellpadding="2"><tr>' +
+       '<td id="showAll" width="100" onclick="showAll()" class="button_on" ' +
+           'title="Display all coverage scopes and bins.">Show All</td>' +
+       '<td id="showCov" width="100" onclick="showCov()" class="button_off" ' +
+           'title="Display only covered scopes and bins.">Show Covered</td>' +
+       '<td id="showMis" width="100" onclick="showMis()" class="button_off" ' +
+           'title="Display only uncovered scopes and bins.">Show Missing</td>' +
+    '</tr></table>');
+  //-->
+  </script>
+  <div class="covered"><a name="cvg3142"/><hr/><table>
+  <tr l="154" lnk="__HDL_srcfile_19.htm#154" z="     if (reset)" c="G" p="100.00"/><tr/>
+  <tr cr="c" t="I" l="154" lnk="__HDL_srcfile_19.htm#154" z="     if (reset)" h="11" c="g"/>
+  <tr cr="c" t="T" l="156" lnk="__HDL_srcfile_19.htm#156" z="     else if (data_ready | wr_transfer_pre)" h="3" c="g"/>
+  <tr cr="c" t="A" l="154" lnk="__HDL_srcfile_19.htm#154" z="     if (reset)" h="229" c="g"/>
+  </table>
+  </div><div><a name="cvg3143"/><hr/><table>
+  <tr l="185" lnk="__HDL_srcfile_19.htm#185" z="        case (WSIZE_cmd)" c="R" p="40.00"/><tr/>
+  <tr cr="c" t="T" l="186" lnk="__HDL_srcfile_19.htm#186" z="          2'b00 : wr_next_size = 4'd1;" h="2" c="g"/>
+  <tr cr="m" t="T" l="187" lnk="__HDL_srcfile_19.htm#187" z="          2'b01 : wr_next_size = 4'd2;" h="0" c="r"/>
+  <tr cr="c" t="T" l="188" lnk="__HDL_srcfile_19.htm#188" z="          2'b10 : wr_next_size = 4'd4;" h="1" c="g"/>
+  <tr cr="m" t="T" l="189" lnk="__HDL_srcfile_19.htm#189" z="          2'b11 : wr_next_size = 4'd8;" h="0" c="r"/>
+  <tr cr="m" t="A" l="185" lnk="__HDL_srcfile_19.htm#185" z="        case (WSIZE_cmd)" h="0" c="r"/>
+  </table>
+  </div><div><a name="cvg3144"/><hr/><table>
+  <tr l="203" lnk="__HDL_srcfile_19.htm#203" z="                  joint_fifo_rd_valid ? rd_transfer_size_joint ..." c="Y" p="50.00"/><tr/>
+  <tr cr="m" t="I" l="203" lnk="__HDL_srcfile_19.htm#203" z="                  joint_fifo_rd_valid ? rd_transfer_size_joint ..." h="0" c="r"/>
+  <tr cr="c" t="E" l="204" lnk="__HDL_srcfile_19.htm#204" z="                  WID_cmd[5:4] == 2'b00 ? 4'd1 :" h="4" c="g"/>
+  </table>
+  </div><div class="covered"><a name="cvg3145"/><hr/><table>
+  <tr l="204" lnk="__HDL_srcfile_19.htm#204" z="                  WID_cmd[5:4] == 2'b00 ? 4'd1 :" c="G" p="100.00"/><tr/>
+  <tr cr="c" t="I" l="204" lnk="__HDL_srcfile_19.htm#204" z="                  WID_cmd[5:4] == 2'b00 ? 4'd1 :" h="2" c="g"/>
+  <tr cr="c" t="E" l="205" lnk="__HDL_srcfile_19.htm#205" z="                  WID_cmd[5:4] == 2'b01 ? 4'd2 :" h="1" c="g"/>
+  </table>
+  </div><div><a name="cvg3146"/><hr/><table>
+  <tr l="205" lnk="__HDL_srcfile_19.htm#205" z="                  WID_cmd[5:4] == 2'b01 ? 4'd2 :" c="Y" p="50.00"/><tr/>
+  <tr cr="m" t="I" l="205" lnk="__HDL_srcfile_19.htm#205" z="                  WID_cmd[5:4] == 2'b01 ? 4'd2 :" h="0" c="r"/>
+  <tr cr="c" t="E" l="206" lnk="__HDL_srcfile_19.htm#206" z="                  WID_cmd[5:4] == 2'b10 ? 4'd4 : 4'd8;" h="1" c="g"/>
+  </table>
+  </div><div><a name="cvg3147"/><hr/><table>
+  <tr l="206" lnk="__HDL_srcfile_19.htm#206" z="                  WID_cmd[5:4] == 2'b10 ? 4'd4 : 4'd8;" c="Y" p="50.00"/><tr/>
+  <tr cr="c" t="I" l="206" lnk="__HDL_srcfile_19.htm#206" z="                  WID_cmd[5:4] == 2'b10 ? 4'd4 : 4'd8;" h="1" c="g"/>
+  <tr cr="m" t="E" l="206" lnk="__HDL_srcfile_19.htm#206" z="                  WID_cmd[5:4] == 2'b10 ? 4'd4 : 4'd8;" h="0" c="r"/>
+  </table>
+  </div><div class="covered"><a name="cvg3148"/><hr/><table>
+  <tr l="214" lnk="__HDL_srcfile_19.htm#214" z="     if (reset)" c="G" p="100.00"/><tr/>
+  <tr cr="c" t="I" l="214" lnk="__HDL_srcfile_19.htm#214" z="     if (reset)" h="11" c="g"/>
+  <tr cr="c" t="T" l="216" lnk="__HDL_srcfile_19.htm#216" z="     else if (cmd_push)" h="1" c="g"/>
+  <tr cr="c" t="A" l="214" lnk="__HDL_srcfile_19.htm#214" z="     if (reset)" h="231" c="g"/>
+  </table>
+  </div><div class="covered"><a name="cvg3149"/><hr/><table>
+  <tr l="226" lnk="__HDL_srcfile_19.htm#226" z="                  WID_data[5:4] == 2'b00 ? 4'd1 :" c="G" p="100.00"/><tr/>
+  <tr cr="c" t="I" l="226" lnk="__HDL_srcfile_19.htm#226" z="                  WID_data[5:4] == 2'b00 ? 4'd1 :" h="2" c="g"/>
+  <tr cr="c" t="E" l="227" lnk="__HDL_srcfile_19.htm#227" z="                  WID_data[5:4] == 2'b01 ? 4'd2 :" h="1" c="g"/>
+  </table>
+  </div><div><a name="cvg3150"/><hr/><table>
+  <tr l="227" lnk="__HDL_srcfile_19.htm#227" z="                  WID_data[5:4] == 2'b01 ? 4'd2 :" c="Y" p="50.00"/><tr/>
+  <tr cr="m" t="I" l="227" lnk="__HDL_srcfile_19.htm#227" z="                  WID_data[5:4] == 2'b01 ? 4'd2 :" h="0" c="r"/>
+  <tr cr="c" t="E" l="228" lnk="__HDL_srcfile_19.htm#228" z="                  WID_data[5:4] == 2'b10 ? 4'd4 : 4'd8;" h="1" c="g"/>
+  </table>
+  </div><div><a name="cvg3151"/><hr/><table>
+  <tr l="228" lnk="__HDL_srcfile_19.htm#228" z="                  WID_data[5:4] == 2'b10 ? 4'd4 : 4'd8;" c="Y" p="50.00"/><tr/>
+  <tr cr="c" t="I" l="228" lnk="__HDL_srcfile_19.htm#228" z="                  WID_data[5:4] == 2'b10 ? 4'd4 : 4'd8;" h="1" c="g"/>
+  <tr cr="m" t="E" l="228" lnk="__HDL_srcfile_19.htm#228" z="                  WID_data[5:4] == 2'b10 ? 4'd4 : 4'd8;" h="0" c="r"/>
+  </table>
+  </div><div class="covered"><a name="cvg3152"/><hr/><table>
+  <tr l="233" lnk="__HDL_srcfile_19.htm#233" z="     if (reset)" c="G" p="100.00"/><tr/>
+  <tr cr="c" t="I" l="233" lnk="__HDL_srcfile_19.htm#233" z="     if (reset)" h="11" c="g"/>
+  <tr cr="c" t="T" l="238" lnk="__HDL_srcfile_19.htm#238" z="     else if (wr_transfer_pre)" h="2" c="g"/>
+  <tr cr="c" t="A" l="233" lnk="__HDL_srcfile_19.htm#233" z="     if (reset)" h="230" c="g"/>
+  </table>
+  </div><div><a name="cvg3153"/><hr/><table>
+  <tr l="250" lnk="__HDL_srcfile_19.htm#250" z="     if (reset)" c="Y" p="66.66"/><tr/>
+  <tr cr="c" t="I" l="250" lnk="__HDL_srcfile_19.htm#250" z="     if (reset)" h="11" c="g"/>
+  <tr cr="m" t="T" l="252" lnk="__HDL_srcfile_19.htm#252" z="     else if (wr_clr_line_pre)" h="0" c="r"/>
+  <tr cr="c" t="A" l="250" lnk="__HDL_srcfile_19.htm#250" z="     if (reset)" h="232" c="g"/>
+  </table>
+  </div><div><a name="cvg3154"/><hr/><table>
+  <tr l="276" lnk="__HDL_srcfile_19.htm#276" z="    case ({AWSIZE[1:0], AWADDR[1:0]})" c="R" p="28.57"/><tr/>
+  <tr cr="c" t="T" l="278" lnk="__HDL_srcfile_19.htm#278" z="      {2'b00, 2'b00} : WSTRB_pre = 4'b0001;" h="1" c="g"/>
+  <tr cr="m" t="T" l="279" lnk="__HDL_srcfile_19.htm#279" z="      {2'b00, 2'b01} : WSTRB_pre = 4'b0010;" h="0" c="r"/>
+  <tr cr="m" t="T" l="280" lnk="__HDL_srcfile_19.htm#280" z="      {2'b00, 2'b10} : WSTRB_pre = 4'b0100;" h="0" c="r"/>
+  <tr cr="m" t="T" l="281" lnk="__HDL_srcfile_19.htm#281" z="      {2'b00, 2'b11} : WSTRB_pre = 4'b1000;" h="0" c="r"/>
+  <tr cr="m" t="T" l="284" lnk="__HDL_srcfile_19.htm#284" z="      {2'b01, 2'b00} : WSTRB_pre = 4'b0011;" h="0" c="r"/>
+  <tr cr="m" t="T" l="285" lnk="__HDL_srcfile_19.htm#285" z="      {2'b01, 2'b10} : WSTRB_pre = 4'b1100;" h="0" c="r"/>
+  <tr cr="c" t="T" l="288" lnk="__HDL_srcfile_19.htm#288" z="      default : WSTRB_pre = 4'b1111;" h="1" c="g"/>
+  </table>
+  </div><div class="covered"><a name="cvg3155"/><hr/><table>
+  <tr l="320" lnk="__HDL_srcfile_19.htm#320" z="     if (reset)" c="G" p="100.00"/><tr/>
+  <tr cr="c" t="I" l="320" lnk="__HDL_srcfile_19.htm#320" z="     if (reset)" h="11" c="g"/>
+  <tr cr="c" t="T" l="322" lnk="__HDL_srcfile_19.htm#322" z="     else if (cmd_pop)" h="1" c="g"/>
+  <tr cr="c" t="T" l="324" lnk="__HDL_srcfile_19.htm#324" z="     else if (ch_fifo_rd)" h="1" c="g"/>
+  <tr cr="c" t="A" l="320" lnk="__HDL_srcfile_19.htm#320" z="     if (reset)" h="230" c="g"/>
+  </table>
+  </div><div class="covered"><a name="cvg3156"/><hr/><table>
+  <tr l="360" lnk="__HDL_srcfile_19.htm#360" z="     if (reset)" c="G" p="100.00"/><tr/>
+  <tr cr="c" t="I" l="360" lnk="__HDL_srcfile_19.htm#360" z="     if (reset)" h="11" c="g"/>
+  <tr cr="c" t="T" l="362" lnk="__HDL_srcfile_19.htm#362" z="     else if (cmd_data_pop)" h="1" c="g"/>
+  <tr cr="c" t="T" l="364" lnk="__HDL_srcfile_19.htm#364" z="     else if (wr_transfer_pre)" h="1" c="g"/>
+  <tr cr="c" t="A" l="360" lnk="__HDL_srcfile_19.htm#360" z="     if (reset)" h="230" c="g"/>
+  </table>
+  </div><script type="text/javascript" src="../scripts/buildbranchpage.js"></script>
+  <!-- make sure jumps to last few line nos work -->
+<br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+<br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+<br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+<br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+<br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+<br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+<br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+<br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+<br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+<br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+  
+</body>
+</html>

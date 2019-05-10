@@ -1,0 +1,212 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html;charset=utf-8"/>
+  <title>Questa Coverage Report</title>
+  <!-- original name: _tb_top_u_dma_axi32_wrap_u_dma_axi32_dma_axi32_dual_core_dma_axi32_core0_top_dma_axi32_core0_dma_axi32_core0_channels_dma_axi32_core0_ch0_dma_axi32_ch_calc_rd_dma_axi32_ch_calc_size_dma_axi32_core0_ch_calc_jointContentFrame4.htm -->
+  <link rel="StyleSheet" media="print"  href="../css/ucdb2htmlP.css"/>
+  <link rel="StyleSheet" media="screen" href="../css/ucdb2html.css"/>
+  <link rel="StyleSheet" media="screen" href="../css/ucdb2html_newlook.css"/>
+  <script type="text/javascript" src="../scripts/jquery.js"></script>
+  <script type="text/javascript" src="../scripts/showhide.js"></script>
+  
+</head>
+<body id="ucdb2html_detail" onload="showLast()">
+  <h1><span class="strip">Questa</span> Condition Coverage Report</h1>
+  <h3>Scope: /<a href="z000072.htm">tb_top</a>/<a href="z000401.htm">u_dma_axi32_wrap</a>/<a href="z000667.htm">u_dma_axi32</a>/<a href="z000872.htm">dma_axi32_dual_core</a>/<a href="z001769.htm">dma_axi32_core0_top</a>/<a href="z001945.htm">dma_axi32_core0</a>/<a href="z004253.htm">dma_axi32_core0_channels</a>/<a href="z005415.htm">dma_axi32_core0_ch0</a>/<a href="z007758.htm">dma_axi32_ch_calc_rd</a>/<a href="z007849.htm">dma_axi32_ch_calc_size</a>/<a href="z008015.htm">dma_axi32_core0_ch_calc_joint</a></h3>
+  <!-- use script block so buttons vanish when JavaScript is disabled -->
+  <script type="text/javascript">
+  <!--
+  document.write(
+    '<table class="buttons" cellspacing="2" cellpadding="2"><tr>' +
+       '<td id="showAll" width="100" onclick="showAll()" class="button_on" ' +
+           'title="Display all coverage scopes and bins.">Show All</td>' +
+       '<td id="showCov" width="100" onclick="showCov()" class="button_off" ' +
+           'title="Display only covered scopes and bins.">Show Covered</td>' +
+       '<td id="showMis" width="100" onclick="showMis()" class="button_off" ' +
+           'title="Display only uncovered scopes and bins.">Show Missing</td>' +
+    '</tr></table>');
+  //-->
+  </script>
+  <div><a name="cvg8033"/><hr/><table>
+  <tr s="3" x="FC" lnk="__HDL_srcfile_41.htm#111" z="     else if ((page_cross | ch_end_flush | joint_flush | joint_..." c="R" p="20.00" F="1"/>
+  <tr/>
+  <tr z="page_cross" c="r" r="'_1' not hit" i="Hit '_1'"/>
+  <tr z="ch_end_flush" c="r" r="'_1' not hit" i="Hit '_1'"/>
+  <tr z="joint_flush" c="g" r="" i=""/>
+  <tr z="joint_wait" c="r" r="'_1' not hit" i="Hit '_1'"/>
+  <tr z="ch_end" c="r" r="'_1' not hit" i="Hit '_1'"/>
+  <tr/>
+  <tr n="1" z="page_cross_0" h1="1" t="c" c1="{ 00000 }"/>
+  <tr n="2" z="page_cross_1" h1="0" t="c" c1="{ 10000 }"/>
+  <tr n="3" z="ch_end_flush_0" h1="1" t="c" c1="{ 00000 }"/>
+  <tr n="4" z="ch_end_flush_1" h1="0" t="c" c1="{ 01000 }"/>
+  <tr n="5" z="joint_flush_0" h1="1" t="c" c1="{ 00000 }"/>
+  <tr n="6" z="joint_flush_1" h1="1" t="c" c1="{ 00100 }"/>
+  <tr n="7" z="joint_wait_0" h1="1" t="c" c1="{ 00000 }"/>
+  <tr n="8" z="joint_wait_1" h1="0" t="c" c1="{ 00010 }"/>
+  <tr n="9" z="ch_end_0" h1="1" t="c" c1="{ 1---0 -1--0 --1-0 ---10 }"/>
+  <tr n="10" z="ch_end_1" h1="0" t="c" c1="{ 1---1 -1--1 --1-1 ---11 }"/>
+  </table>
+</div><div class="missing"><a name="cvg8035"/><hr/><table>
+  <tr s="3" x="FC" lnk="__HDL_srcfile_41.htm#113" z="     else if ((~ch_end) &amp; (~wr_cmd_pending))" c="R" p="0.00" F="1"/>
+  <tr/>
+  <tr z="ch_end" c="r" r="'_1' not hit" i="Hit '_1'"/>
+  <tr z="wr_cmd_pending" c="r" r="'_1' not hit" i="Hit '_1'"/>
+  <tr/>
+  <tr n="1" z="ch_end_0" h1="1" t="c" c1="{ 00 }"/>
+  <tr n="2" z="ch_end_1" h1="0" t="c" c1="{ 10 }"/>
+  <tr n="3" z="wr_cmd_pending_0" h1="1" t="c" c1="{ 00 }"/>
+  <tr n="4" z="wr_cmd_pending_1" h1="0" t="c" c1="{ 01 }"/>
+  </table>
+</div><div class="covered"><a name="cvg8037"/><hr/><table>
+  <tr s="3" x="FC" lnk="__HDL_srcfile_41.htm#132" z="           if (joint_flush_in | joint_buffer_small)" c="G" p="100.00" F="1"/>
+  <tr/>
+  <tr z="joint_flush_in" c="g" r="" i=""/>
+  <tr z="joint_buffer_small" c="g" r="" i=""/>
+  <tr/>
+  <tr n="1" z="joint_flush_in_0" h1="1" t="c" c1="{ 00 }"/>
+  <tr n="2" z="joint_flush_in_1" h1="1" t="c" c1="{ 10 }"/>
+  <tr n="3" z="joint_buffer_small_0" h1="1" t="c" c1="{ 00 }"/>
+  <tr n="4" z="joint_buffer_small_1" h1="1" t="c" c1="{ 01 }"/>
+  </table>
+</div><div class="missing"><a name="cvg8039"/><hr/><table>
+  <tr s="3" x="FC" lnk="__HDL_srcfile_41.htm#134" z="           else if (joint_ready_out &amp; joint_ready_in &amp; outs_emp..." c="R" p="0.00" F="1"/>
+  <tr/>
+  <tr z="joint_ready_out" c="r" r="No hits" i="Hit '_0' and '_1'"/>
+  <tr z="joint_ready_in" c="r" r="No hits" i="Hit '_0' and '_1'"/>
+  <tr z="outs_empty" c="r" r="No hits" i="Hit '_0' and '_1'"/>
+  <tr/>
+  <tr n="1" z="joint_ready_out_0" h1="0" t="c" c1="{ 011 }"/>
+  <tr n="2" z="joint_ready_out_1" h1="0" t="c" c1="{ 111 }"/>
+  <tr n="3" z="joint_ready_in_0" h1="0" t="c" c1="{ 101 }"/>
+  <tr n="4" z="joint_ready_in_1" h1="0" t="c" c1="{ 111 }"/>
+  <tr n="5" z="outs_empty_0" h1="0" t="c" c1="{ 110 }"/>
+  <tr n="6" z="outs_empty_1" h1="0" t="c" c1="{ 111 }"/>
+  </table>
+</div><div class="missing"><a name="cvg8041"/><hr/><table>
+  <tr s="3" x="FC" lnk="__HDL_srcfile_41.htm#141" z="           else if (fifo_not_ready &amp; joint_ready_in &amp; outs_empt..." c="R" p="0.00" F="1"/>
+  <tr/>
+  <tr z="fifo_not_ready" c="r" r="No hits" i="Hit '_0' and '_1'"/>
+  <tr z="joint_ready_in" c="r" r="No hits" i="Hit '_0' and '_1'"/>
+  <tr z="outs_empty" c="r" r="No hits" i="Hit '_0' and '_1'"/>
+  <tr/>
+  <tr n="1" z="fifo_not_ready_0" h1="0" t="c" c1="{ 011 }"/>
+  <tr n="2" z="fifo_not_ready_1" h1="0" t="c" c1="{ 111 }"/>
+  <tr n="3" z="joint_ready_in_0" h1="0" t="c" c1="{ 101 }"/>
+  <tr n="4" z="joint_ready_in_1" h1="0" t="c" c1="{ 111 }"/>
+  <tr n="5" z="outs_empty_0" h1="0" t="c" c1="{ 110 }"/>
+  <tr n="6" z="outs_empty_1" h1="0" t="c" c1="{ 111 }"/>
+  </table>
+</div><div class="missing"><a name="cvg8043"/><hr/><table>
+  <tr s="3" x="FC" lnk="__HDL_srcfile_41.htm#176" z="           if (joint_cross | page_cross)" c="R" p="0.00" F="1"/>
+  <tr/>
+  <tr z="joint_cross" c="r" r="No hits" i="Hit '_0' and '_1'"/>
+  <tr z="page_cross" c="r" r="No hits" i="Hit '_0' and '_1'"/>
+  <tr/>
+  <tr n="1" z="joint_cross_0" h1="0" t="c" c1="{ 00 }"/>
+  <tr n="2" z="joint_cross_1" h1="0" t="c" c1="{ 10 }"/>
+  <tr n="3" z="page_cross_0" h1="0" t="c" c1="{ 00 }"/>
+  <tr n="4" z="page_cross_1" h1="0" t="c" c1="{ 01 }"/>
+  </table>
+</div><div class="missing"><a name="cvg8045"/><hr/><table>
+  <tr s="3" x="FC" lnk="__HDL_srcfile_41.htm#178" z="           else if ((~joint_ready_out) | joint_flush_in | joint..." c="R" p="0.00" F="1"/>
+  <tr/>
+  <tr z="joint_ready_out" c="r" r="No hits" i="Hit '_0' and '_1'"/>
+  <tr z="joint_flush_in" c="r" r="No hits" i="Hit '_0' and '_1'"/>
+  <tr z="joint_buffer_small" c="r" r="No hits" i="Hit '_0' and '_1'"/>
+  <tr/>
+  <tr n="1" z="joint_ready_out_0" h1="0" t="c" c1="{ 000 }"/>
+  <tr n="2" z="joint_ready_out_1" h1="0" t="c" c1="{ 100 }"/>
+  <tr n="3" z="joint_flush_in_0" h1="0" t="c" c1="{ 100 }"/>
+  <tr n="4" z="joint_flush_in_1" h1="0" t="c" c1="{ 110 }"/>
+  <tr n="5" z="joint_buffer_small_0" h1="0" t="c" c1="{ 100 }"/>
+  <tr n="6" z="joint_buffer_small_1" h1="0" t="c" c1="{ 101 }"/>
+  </table>
+</div><div class="missing"><a name="cvg8047"/><hr/><table>
+  <tr s="3" x="FC" lnk="__HDL_srcfile_41.htm#180" z="           else if (joint_ready_in &amp; outs_empty)" c="R" p="0.00" F="1"/>
+  <tr/>
+  <tr z="joint_ready_in" c="r" r="No hits" i="Hit '_0' and '_1'"/>
+  <tr z="outs_empty" c="r" r="No hits" i="Hit '_0' and '_1'"/>
+  <tr/>
+  <tr n="1" z="joint_ready_in_0" h1="0" t="c" c1="{ 01 }"/>
+  <tr n="2" z="joint_ready_in_1" h1="0" t="c" c1="{ 11 }"/>
+  <tr n="3" z="outs_empty_0" h1="0" t="c" c1="{ 10 }"/>
+  <tr n="4" z="outs_empty_1" h1="0" t="c" c1="{ 11 }"/>
+  </table>
+</div><div class="missing"><a name="cvg8049"/><hr/><table>
+  <tr s="3" x="FC" lnk="__HDL_srcfile_41.htm#191" z="           if (joint_flush_in | joint_buffer_small)" c="R" p="0.00" F="1"/>
+  <tr/>
+  <tr z="joint_flush_in" c="r" r="No hits" i="Hit '_0' and '_1'"/>
+  <tr z="joint_buffer_small" c="r" r="No hits" i="Hit '_0' and '_1'"/>
+  <tr/>
+  <tr n="1" z="joint_flush_in_0" h1="0" t="c" c1="{ 00 }"/>
+  <tr n="2" z="joint_flush_in_1" h1="0" t="c" c1="{ 10 }"/>
+  <tr n="3" z="joint_buffer_small_0" h1="0" t="c" c1="{ 00 }"/>
+  <tr n="4" z="joint_buffer_small_1" h1="0" t="c" c1="{ 01 }"/>
+  </table>
+</div><div class="missing"><a name="cvg8051"/><hr/><table>
+  <tr s="3" x="FC" lnk="__HDL_srcfile_41.htm#193" z="           else if (joint_ready_in &amp; joint_ready_out)" c="R" p="0.00" F="1"/>
+  <tr/>
+  <tr z="joint_ready_in" c="r" r="No hits" i="Hit '_0' and '_1'"/>
+  <tr z="joint_ready_out" c="r" r="No hits" i="Hit '_0' and '_1'"/>
+  <tr/>
+  <tr n="1" z="joint_ready_in_0" h1="0" t="c" c1="{ 01 }"/>
+  <tr n="2" z="joint_ready_in_1" h1="0" t="c" c1="{ 11 }"/>
+  <tr n="3" z="joint_ready_out_0" h1="0" t="c" c1="{ 10 }"/>
+  <tr n="4" z="joint_ready_out_1" h1="0" t="c" c1="{ 11 }"/>
+  </table>
+</div><div class="missing"><a name="cvg8053"/><hr/><table>
+  <tr s="3" x="FC" lnk="__HDL_srcfile_41.htm#211" z="           else if ((~joint_ready_out) | (~joint_ready_in) | ch..." c="R" p="0.00" F="1"/>
+  <tr/>
+  <tr z="joint_ready_out" c="r" r="No hits" i="Hit '_0' and '_1'"/>
+  <tr z="joint_ready_in" c="r" r="No hits" i="Hit '_0' and '_1'"/>
+  <tr z="ch_end_flush" c="r" r="No hits" i="Hit '_0' and '_1'"/>
+  <tr/>
+  <tr n="1" z="joint_ready_out_0" h1="0" t="c" c1="{ 010 }"/>
+  <tr n="2" z="joint_ready_out_1" h1="0" t="c" c1="{ 110 }"/>
+  <tr n="3" z="joint_ready_in_0" h1="0" t="c" c1="{ 100 }"/>
+  <tr n="4" z="joint_ready_in_1" h1="0" t="c" c1="{ 110 }"/>
+  <tr n="5" z="ch_end_flush_0" h1="0" t="c" c1="{ 110 }"/>
+  <tr n="6" z="ch_end_flush_1" h1="0" t="c" c1="{ 111 }"/>
+  </table>
+</div><div class="missing"><a name="cvg8055"/><hr/><table>
+  <tr s="3" x="FC" lnk="__HDL_srcfile_41.htm#221" z="           else if (joint_ready_out &amp; (~joint_cross) &amp; outs_emp..." c="R" p="0.00" F="1"/>
+  <tr/>
+  <tr z="joint_cross" c="r" r="No hits" i="Hit '_0' and '_1'"/>
+  <tr z="joint_ready_out" c="r" r="No hits" i="Hit '_0' and '_1'"/>
+  <tr z="outs_empty" c="r" r="No hits" i="Hit '_0' and '_1'"/>
+  <tr/>
+  <tr n="1" z="joint_cross_0" h1="0" t="c" c1="{ 011 }"/>
+  <tr n="2" z="joint_cross_1" h1="0" t="c" c1="{ 111 }"/>
+  <tr n="3" z="joint_ready_out_0" h1="0" t="c" c1="{ 001 }"/>
+  <tr n="4" z="joint_ready_out_1" h1="0" t="c" c1="{ 011 }"/>
+  <tr n="5" z="outs_empty_0" h1="0" t="c" c1="{ 010 }"/>
+  <tr n="6" z="outs_empty_1" h1="0" t="c" c1="{ 011 }"/>
+  </table>
+</div><div class="missing"><a name="cvg8057"/><hr/><table>
+  <tr s="3" x="FC" lnk="__HDL_srcfile_41.htm#223" z="            if (fifo_wr_ready &amp; (fifo_remain &lt;= 'd16)) //rd_gap..." c="R" p="0.00" F="1"/>
+  <tr/>
+  <tr z="fifo_wr_ready" c="r" r="No hits" i="Hit '_0' and '_1'"/>
+  <tr z="(fifo_remain <= 16)" c="r" r="No hits" i="Hit '_0' and '_1'"/>
+  <tr/>
+  <tr n="1" z="fifo_wr_ready_0" h1="0" t="c" c1="{ 01 }"/>
+  <tr n="2" z="fifo_wr_ready_1" h1="0" t="c" c1="{ 11 }"/>
+  <tr n="3" z="(fifo_remain <= 16)_0" h1="0" t="c" c1="{ 10 }"/>
+  <tr n="4" z="(fifo_remain <= 16)_1" h1="0" t="c" c1="{ 11 }"/>
+  </table>
+</div><script type="text/javascript" src="../scripts/buildecpage.js"></script>
+  <!-- make sure jumps to last few line nos work -->
+<br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+<br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+<br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+<br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+<br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+<br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+<br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+<br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+<br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+<br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+  
+</body>
+</html>

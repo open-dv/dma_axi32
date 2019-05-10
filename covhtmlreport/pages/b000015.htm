@@ -1,0 +1,90 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html;charset=utf-8"/>
+  <title>Questa Coverage Report</title>
+  <!-- original name: _work.dma_axi32_core0_ch_rd_slicerContentFrame2.htm -->
+  <link rel="StyleSheet" media="print"  href="../css/ucdb2htmlP.css"/>
+  <link rel="StyleSheet" media="screen" href="../css/ucdb2html.css"/>
+  <link rel="StyleSheet" media="screen" href="../css/ucdb2html_newlook.css"/>
+  <script type="text/javascript" src="../scripts/jquery.js"></script>
+  <script type="text/javascript" src="../scripts/showhide.js"></script>
+  
+</head>
+<body id="ucdb2html_detail" onload="showLast()">
+  <h1><span class="strip">Questa</span> Branch Coverage Report</h1>
+  <h3>Scope: /<a href="z000015.htm">work.dma_axi32_core0_ch_rd_slicer</a></h3>
+  <!-- use script block so buttons vanish when JavaScript is disabled -->
+  <script type="text/javascript">
+  <!--
+  document.write(
+    '<table class="buttons" cellspacing="2" cellpadding="2"><tr>' +
+       '<td id="showAll" width="100" onclick="showAll()" class="button_on" ' +
+           'title="Display all coverage scopes and bins.">Show All</td>' +
+       '<td id="showCov" width="100" onclick="showCov()" class="button_off" ' +
+           'title="Display only covered scopes and bins.">Show Covered</td>' +
+       '<td id="showMis" width="100" onclick="showMis()" class="button_off" ' +
+           'title="Display only uncovered scopes and bins.">Show Missing</td>' +
+    '</tr></table>');
+  //-->
+  </script>
+  <div><a name="cvg9210"/><hr/><table>
+  <tr l="92" lnk="__HDL_srcfile_46.htm#92" z="                  (~wr_incr) &amp; wr_single ? rd_align - rd_ptr[2-..." c="Y" p="50.00"/><tr/>
+  <tr cr="m" t="I" l="92" lnk="__HDL_srcfile_46.htm#92" z="                  (~wr_incr) &amp; wr_single ? rd_align - rd_ptr[2-..." h="0" c="r"/>
+  <tr cr="c" t="E" l="93" lnk="__HDL_srcfile_46.htm#93" z="                  rd_align;" h="3" c="g"/>
+  </table>
+  </div><div class="covered"><a name="cvg9211"/><hr/><table>
+  <tr l="97" lnk="__HDL_srcfile_46.htm#97" z="     if (reset)" c="G" p="100.00"/><tr/>
+  <tr cr="c" t="I" l="97" lnk="__HDL_srcfile_46.htm#97" z="     if (reset)" h="11" c="g"/>
+  <tr cr="c" t="E" l="102" lnk="__HDL_srcfile_46.htm#102" z="     else" h="232" c="g"/>
+  </table>
+  </div><div><a name="cvg9212"/><hr/><table>
+  <tr l="110" lnk="__HDL_srcfile_46.htm#110" z="    case(rd_align_d[2-1:0])" c="R" p="20.00"/><tr/>
+  <tr cr="c" t="T" l="111" lnk="__HDL_srcfile_46.htm#111" z="      2'd0 : slice_rdata = next_rdata[31:0];" h="3" c="g"/>
+  <tr cr="m" t="T" l="112" lnk="__HDL_srcfile_46.htm#112" z="      2'd1 : slice_rdata = {fifo_rdata[23:0], next_rdata[7:0]};..." h="0" c="r"/>
+  <tr cr="m" t="T" l="113" lnk="__HDL_srcfile_46.htm#113" z="      2'd2 : slice_rdata = {fifo_rdata[15:0], next_rdata[15:0]}..." h="0" c="r"/>
+  <tr cr="m" t="T" l="114" lnk="__HDL_srcfile_46.htm#114" z="      2'd3 : slice_rdata = {fifo_rdata[7:0], next_rdata[23:0]};..." h="0" c="r"/>
+  <tr cr="m" t="A" l="110" lnk="__HDL_srcfile_46.htm#110" z="    case(rd_align_d[2-1:0])" h="0" c="r"/>
+  </table>
+  </div><div><a name="cvg9213"/><hr/><table>
+  <tr l="121" lnk="__HDL_srcfile_46.htm#121" z="    case(rd_align_valid[2-1:0])" c="R" p="20.00"/><tr/>
+  <tr cr="c" t="T" l="122" lnk="__HDL_srcfile_46.htm#122" z="      2'd0 : next_rdata_pre = fifo_rdata[31:0];" h="2" c="g"/>
+  <tr cr="m" t="T" l="123" lnk="__HDL_srcfile_46.htm#123" z="      2'd1 : next_rdata_pre = {{24{1'b0}}, fifo_rdata[31:24]};" h="0" c="r"/>
+  <tr cr="m" t="T" l="124" lnk="__HDL_srcfile_46.htm#124" z="      2'd2 : next_rdata_pre = {{16{1'b0}}, fifo_rdata[31:16]};" h="0" c="r"/>
+  <tr cr="m" t="T" l="125" lnk="__HDL_srcfile_46.htm#125" z="      2'd3 : next_rdata_pre = {{8{1'b0}}, fifo_rdata[31:8]};" h="0" c="r"/>
+  <tr cr="m" t="A" l="121" lnk="__HDL_srcfile_46.htm#121" z="    case(rd_align_valid[2-1:0])" h="0" c="r"/>
+  </table>
+  </div><div class="covered"><a name="cvg9214"/><hr/><table>
+  <tr l="132" lnk="__HDL_srcfile_46.htm#132" z="     if (reset)" c="G" p="100.00"/><tr/>
+  <tr cr="c" t="I" l="132" lnk="__HDL_srcfile_46.htm#132" z="     if (reset)" h="11" c="g"/>
+  <tr cr="c" t="T" l="134" lnk="__HDL_srcfile_46.htm#134" z="     else if (slice_rd_d)" h="2" c="g"/>
+  <tr cr="c" t="A" l="132" lnk="__HDL_srcfile_46.htm#132" z="     if (reset)" h="230" c="g"/>
+  </table>
+  </div><div class="covered"><a name="cvg9215"/><hr/><table>
+  <tr l="142" lnk="__HDL_srcfile_46.htm#142" z="     if (reset)" c="G" p="100.00"/><tr/>
+  <tr cr="c" t="I" l="142" lnk="__HDL_srcfile_46.htm#142" z="     if (reset)" h="11" c="g"/>
+  <tr cr="c" t="T" l="144" lnk="__HDL_srcfile_46.htm#144" z="     else if (fifo_rd | (|next_rsize))" h="2" c="g"/>
+  <tr cr="c" t="A" l="142" lnk="__HDL_srcfile_46.htm#142" z="     if (reset)" h="230" c="g"/>
+  </table>
+  </div><div><a name="cvg9216"/><hr/><table>
+  <tr l="155" lnk="__HDL_srcfile_46.htm#155" z="     if (reset)" c="Y" p="75.00"/><tr/>
+  <tr cr="c" t="I" l="155" lnk="__HDL_srcfile_46.htm#155" z="     if (reset)" h="11" c="g"/>
+  <tr cr="m" t="T" l="157" lnk="__HDL_srcfile_46.htm#157" z="     else if (next_rd)" h="0" c="r"/>
+  <tr cr="c" t="T" l="159" lnk="__HDL_srcfile_46.htm#159" z="     else if (fifo_rd | slice_rd)" h="3" c="g"/>
+  <tr cr="c" t="A" l="155" lnk="__HDL_srcfile_46.htm#155" z="     if (reset)" h="229" c="g"/>
+  </table>
+  </div><script type="text/javascript" src="../scripts/buildbranchpage.js"></script>
+  <!-- make sure jumps to last few line nos work -->
+<br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+<br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+<br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+<br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+<br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+<br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+<br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+<br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+<br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+<br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+  
+</body>
+</html>

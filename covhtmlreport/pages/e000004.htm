@@ -1,0 +1,95 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html;charset=utf-8"/>
+  <title>Questa Coverage Report</title>
+  <!-- original name: _work.axi_slave_rd_buffContentFrame3.htm -->
+  <link rel="StyleSheet" media="print"  href="../css/ucdb2htmlP.css"/>
+  <link rel="StyleSheet" media="screen" href="../css/ucdb2html.css"/>
+  <link rel="StyleSheet" media="screen" href="../css/ucdb2html_newlook.css"/>
+  <script type="text/javascript" src="../scripts/jquery.js"></script>
+  <script type="text/javascript" src="../scripts/showhide.js"></script>
+  
+</head>
+<body id="ucdb2html_detail" onload="showLast()">
+  <h1><span class="strip">Questa</span> Expression Coverage Report</h1>
+  <h3>Scope: /<a href="z000004.htm">work.axi_slave_rd_buff</a></h3>
+  <!-- use script block so buttons vanish when JavaScript is disabled -->
+  <script type="text/javascript">
+  <!--
+  document.write(
+    '<table class="buttons" cellspacing="2" cellpadding="2"><tr>' +
+       '<td id="showAll" width="100" onclick="showAll()" class="button_on" ' +
+           'title="Display all coverage scopes and bins.">Show All</td>' +
+       '<td id="showCov" width="100" onclick="showCov()" class="button_off" ' +
+           'title="Display only covered scopes and bins.">Show Covered</td>' +
+       '<td id="showMis" width="100" onclick="showMis()" class="button_off" ' +
+           'title="Display only uncovered scopes and bins.">Show Missing</td>' +
+    '</tr></table>');
+  //-->
+  </script>
+  <div class="missing"><a name="cvg12327"/><hr/><table>
+  <tr s="3" x="FE" lnk="__HDL_srcfile_59.htm#51" z="   assign               cmd_pending = RVALID &amp; (~RREADY);" c="R" p="0.00" F="1"/>
+  <tr/>
+  <tr z="RVALID" c="r" r="No hits" i="Hit '_0' and '_1'"/>
+  <tr z="RREADY" c="r" r="'_0' not hit" i="Hit '_0'"/>
+  <tr/>
+  <tr n="1" z="RVALID_0" h1="0" t="e" c1="{ 00 }"/>
+  <tr n="2" z="RVALID_1" h1="0" t="e" c1="{ 10 }"/>
+  <tr n="3" z="RREADY_0" h1="0" t="e" c1="{ 10 }"/>
+  <tr n="4" z="RREADY_1" h1="1" t="e" c1="{ 11 }"/>
+  </table>
+</div><div><a name="cvg12329"/><hr/><table>
+  <tr s="3" x="FE" lnk="__HDL_srcfile_59.htm#56" z="   assign               RD      = rcmd_ready &amp; (~cmd_pending) &amp;..." c="Y" p="50.00" F="1"/>
+  <tr/>
+  <tr z="cmd_pending" c="r" r="'_1' not hit" i="Hit '_1'"/>
+  <tr z="RBUSY" c="g" r="" i=""/>
+  <tr z="rcmd_timeout" c="r" r="'_1' not hit" i="Hit '_1'"/>
+  <tr z="rcmd_ready" c="g" r="" i=""/>
+  <tr/>
+  <tr n="1" z="cmd_pending_0" h1="1" t="e" c1="{ 0001 }"/>
+  <tr n="2" z="cmd_pending_1" h1="0" t="e" c1="{ 1001 }"/>
+  <tr n="3" z="RBUSY_0" h1="1" t="e" c1="{ 0001 }"/>
+  <tr n="4" z="RBUSY_1" h1="1" t="e" c1="{ 0101 }"/>
+  <tr n="5" z="rcmd_timeout_0" h1="1" t="e" c1="{ 0001 }"/>
+  <tr n="6" z="rcmd_timeout_1" h1="0" t="e" c1="{ 0011 }"/>
+  <tr n="7" z="rcmd_ready_0" h1="1" t="e" c1="{ 0000 }"/>
+  <tr n="8" z="rcmd_ready_1" h1="1" t="e" c1="{ 0001 }"/>
+  </table>
+</div><div class="covered"><a name="cvg12331"/><hr/><table>
+  <tr s="3" x="FE" lnk="__HDL_srcfile_59.htm#58" z="   assign               RD_last = RD &amp; (rd_counter == rcmd_len)..." c="G" p="100.00" F="1"/>
+  <tr/>
+  <tr z="RD" c="g" r="" i=""/>
+  <tr z="(rd_counter == rcmd_len)" c="g" r="" i=""/>
+  <tr/>
+  <tr n="1" z="RD_0" h1="1" t="e" c1="{ 01 }"/>
+  <tr n="2" z="RD_1" h1="1" t="e" c1="{ 11 }"/>
+  <tr n="3" z="(rd_counter == rcmd_len)_0" h1="1" t="e" c1="{ 10 }"/>
+  <tr n="4" z="(rd_counter == rcmd_len)_1" h1="1" t="e" c1="{ 11 }"/>
+  </table>
+</div><div><a name="cvg12333"/><hr/><table>
+  <tr s="3" x="FE" lnk="__HDL_srcfile_59.htm#60" z="   assign               RLAST   = RVALID &amp; (valid_counter == rc..." c="Y" p="50.00" F="1"/>
+  <tr/>
+  <tr z="RVALID" c="r" r="'_0' not hit" i="Hit '_0'"/>
+  <tr z="(valid_counter == (rcmd_len2 + 1'b1))" c="g" r="" i=""/>
+  <tr/>
+  <tr n="1" z="RVALID_0" h1="0" t="e" c1="{ 01 }"/>
+  <tr n="2" z="RVALID_1" h1="1" t="e" c1="{ 11 }"/>
+  <tr n="3" z="(valid_counter == (rcmd_len2 + 1'b1))_0" h1="1" t="e" c1="{ 10 }"/>
+  <tr n="4" z="(valid_counter == (rcmd_len2 + 1'b1))_1" h1="1" t="e" c1="{ 11 }"/>
+  </table>
+</div><script type="text/javascript" src="../scripts/buildecpage.js"></script>
+  <!-- make sure jumps to last few line nos work -->
+<br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+<br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+<br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+<br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+<br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+<br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+<br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+<br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+<br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+<br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+  
+</body>
+</html>

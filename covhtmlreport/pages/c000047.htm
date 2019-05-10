@@ -1,0 +1,92 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html;charset=utf-8"/>
+  <title>Questa Coverage Report</title>
+  <!-- original name: _work.dma_axi32_core0_axim_cmdContentFrame4.htm -->
+  <link rel="StyleSheet" media="print"  href="../css/ucdb2htmlP.css"/>
+  <link rel="StyleSheet" media="screen" href="../css/ucdb2html.css"/>
+  <link rel="StyleSheet" media="screen" href="../css/ucdb2html_newlook.css"/>
+  <script type="text/javascript" src="../scripts/jquery.js"></script>
+  <script type="text/javascript" src="../scripts/showhide.js"></script>
+  
+</head>
+<body id="ucdb2html_detail" onload="showLast()">
+  <h1><span class="strip">Questa</span> Condition Coverage Report</h1>
+  <h3>Scope: /<a href="z000047.htm">work.dma_axi32_core0_axim_cmd</a></h3>
+  <!-- use script block so buttons vanish when JavaScript is disabled -->
+  <script type="text/javascript">
+  <!--
+  document.write(
+    '<table class="buttons" cellspacing="2" cellpadding="2"><tr>' +
+       '<td id="showAll" width="100" onclick="showAll()" class="button_on" ' +
+           'title="Display all coverage scopes and bins.">Show All</td>' +
+       '<td id="showCov" width="100" onclick="showCov()" class="button_off" ' +
+           'title="Display only covered scopes and bins.">Show Covered</td>' +
+       '<td id="showMis" width="100" onclick="showMis()" class="button_off" ' +
+           'title="Display only uncovered scopes and bins.">Show Missing</td>' +
+    '</tr></table>');
+  //-->
+  </script>
+  <div><a name="cvg15631"/><hr/><table>
+  <tr s="3" x="FC" lnk="__HDL_srcfile_14.htm#173" z="     else if (cmd &amp; (~next_burst))" c="Y" p="50.00" F="1"/>
+  <tr/>
+  <tr z="cmd" c="g" r="" i=""/>
+  <tr z="next_burst" c="r" r="'_1' not hit" i="Hit '_1'"/>
+  <tr/>
+  <tr n="1" z="cmd_0" h1="2" t="c" c1="{ 00 }"/>
+  <tr n="2" z="cmd_1" h1="2" t="c" c1="{ 10 }"/>
+  <tr n="3" z="next_burst_0" h1="2" t="c" c1="{ 10 }"/>
+  <tr n="4" z="next_burst_1" h1="0" t="c" c1="{ 11 }"/>
+  </table>
+</div><div><a name="cvg15633"/><hr/><table>
+  <tr s="3" x="FC" lnk="__HDL_srcfile_14.htm#245" z="     else if (burst_start | next_burst_start)" c="Y" p="50.00" F="1"/>
+  <tr/>
+  <tr z="burst_start" c="g" r="" i=""/>
+  <tr z="next_burst_start" c="r" r="'_1' not hit" i="Hit '_1'"/>
+  <tr/>
+  <tr n="1" z="burst_start_0" h1="2" t="c" c1="{ 00 }"/>
+  <tr n="2" z="burst_start_1" h1="2" t="c" c1="{ 10 }"/>
+  <tr n="3" z="next_burst_start_0" h1="2" t="c" c1="{ 00 }"/>
+  <tr n="4" z="next_burst_start_1" h1="0" t="c" c1="{ 01 }"/>
+  </table>
+</div><div class="missing"><a name="cvg15635"/><hr/><table>
+  <tr s="3" x="FC" lnk="__HDL_srcfile_14.htm#251" z="     else if (AVALID &amp; AREADY)" c="R" p="0.00" F="1"/>
+  <tr/>
+  <tr z="AVALID" c="r" r="'_0' not hit" i="Hit '_0'"/>
+  <tr z="AREADY" c="r" r="'_0' not hit" i="Hit '_0'"/>
+  <tr/>
+  <tr n="1" z="AVALID_0" h1="0" t="c" c1="{ 01 }"/>
+  <tr n="2" z="AVALID_1" h1="2" t="c" c1="{ 11 }"/>
+  <tr n="3" z="AREADY_0" h1="0" t="c" c1="{ 10 }"/>
+  <tr n="4" z="AREADY_1" h1="2" t="c" c1="{ 11 }"/>
+  </table>
+</div><div><a name="cvg15637"/><hr/><table>
+  <tr s="3" x="FC" lnk="__HDL_srcfile_14.htm#253" z="     else if ((burst_start &amp; (burst_size &gt; 'd0)) | next_burst_s..." c="R" p="33.33" F="1"/>
+  <tr/>
+  <tr z="burst_start" c="g" r="" i=""/>
+  <tr z="(burst_size > 0)" c="r" r="'_0' not hit" i="Hit '_0'"/>
+  <tr z="next_burst_start" c="r" r="'_1' not hit" i="Hit '_1'"/>
+  <tr/>
+  <tr n="1" z="burst_start_0" h1="2" t="c" c1="{ 010 }"/>
+  <tr n="2" z="burst_start_1" h1="2" t="c" c1="{ 110 }"/>
+  <tr n="3" z="(burst_size > 0)_0" h1="0" t="c" c1="{ 100 }"/>
+  <tr n="4" z="(burst_size > 0)_1" h1="2" t="c" c1="{ 110 }"/>
+  <tr n="5" z="next_burst_start_0" h1="2" t="c" c1="{ 0-0 -00 }"/>
+  <tr n="6" z="next_burst_start_1" h1="0" t="c" c1="{ 0-1 -01 }"/>
+  </table>
+</div><script type="text/javascript" src="../scripts/buildecpage.js"></script>
+  <!-- make sure jumps to last few line nos work -->
+<br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+<br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+<br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+<br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+<br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+<br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+<br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+<br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+<br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+<br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+  
+</body>
+</html>

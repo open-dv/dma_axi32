@@ -1,0 +1,126 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html;charset=utf-8"/>
+  <title>Questa Coverage Report</title>
+  <!-- original name: _tb_top_u_dma_axi32_wrap_u_dma_axi32_dma_axi32_dual_core_dma_axi32_core0_top_dma_axi32_core0_dma_axi32_core0_channels_dma_axi32_core0_ch0_dma_axi32_ch_calc_rd_dma_axi32_ch_calc_size_dma_axi32_core0_ch_calc_jointContentFrame2.htm -->
+  <link rel="StyleSheet" media="print"  href="../css/ucdb2htmlP.css"/>
+  <link rel="StyleSheet" media="screen" href="../css/ucdb2html.css"/>
+  <link rel="StyleSheet" media="screen" href="../css/ucdb2html_newlook.css"/>
+  <script type="text/javascript" src="../scripts/jquery.js"></script>
+  <script type="text/javascript" src="../scripts/showhide.js"></script>
+  
+</head>
+<body id="ucdb2html_detail" onload="showLast()">
+  <h1><span class="strip">Questa</span> Branch Coverage Report</h1>
+  <h3>Scope: /<a href="z000072.htm">tb_top</a>/<a href="z000401.htm">u_dma_axi32_wrap</a>/<a href="z000667.htm">u_dma_axi32</a>/<a href="z000872.htm">dma_axi32_dual_core</a>/<a href="z001769.htm">dma_axi32_core0_top</a>/<a href="z001945.htm">dma_axi32_core0</a>/<a href="z004253.htm">dma_axi32_core0_channels</a>/<a href="z005415.htm">dma_axi32_core0_ch0</a>/<a href="z007758.htm">dma_axi32_ch_calc_rd</a>/<a href="z007849.htm">dma_axi32_ch_calc_size</a>/<a href="z008015.htm">dma_axi32_core0_ch_calc_joint</a></h3>
+  <!-- use script block so buttons vanish when JavaScript is disabled -->
+  <script type="text/javascript">
+  <!--
+  document.write(
+    '<table class="buttons" cellspacing="2" cellpadding="2"><tr>' +
+       '<td id="showAll" width="100" onclick="showAll()" class="button_on" ' +
+           'title="Display all coverage scopes and bins.">Show All</td>' +
+       '<td id="showCov" width="100" onclick="showCov()" class="button_off" ' +
+           'title="Display only covered scopes and bins.">Show Covered</td>' +
+       '<td id="showMis" width="100" onclick="showMis()" class="button_off" ' +
+           'title="Display only uncovered scopes and bins.">Show Missing</td>' +
+    '</tr></table>');
+  //-->
+  </script>
+  <div><a name="cvg8016"/><hr/><table>
+  <tr l="109" lnk="__HDL_srcfile_41.htm#109" z="     if (reset)" c="Y" p="75.00"/><tr/>
+  <tr cr="c" t="I" l="109" lnk="__HDL_srcfile_41.htm#109" z="     if (reset)" h="11" c="g"/>
+  <tr cr="c" t="T" l="111" lnk="__HDL_srcfile_41.htm#111" z="     else if ((page_cross | ch_end_flush | joint_flush | joint_..." h="13" c="g"/>
+  <tr cr="c" t="T" l="113" lnk="__HDL_srcfile_41.htm#113" z="     else if ((~ch_end) &amp; (~wr_cmd_pending))" h="219" c="g"/>
+  <tr cr="m" t="A" l="109" lnk="__HDL_srcfile_41.htm#109" z="     if (reset)" h="0" c="r"/>
+  </table>
+  </div><div><a name="cvg8017"/><hr/><table>
+  <tr l="128" lnk="__HDL_srcfile_41.htm#128" z="    case (ps)" c="R" p="33.33"/><tr/>
+  <tr cr="c" t="T" l="130" lnk="__HDL_srcfile_41.htm#130" z="      IDLE :" h="16" c="g"/>
+  <tr cr="m" t="T" l="156" lnk="__HDL_srcfile_41.htm#156" z="      REQ_LINE :" h="0" c="r"/>
+  <tr cr="m" t="T" l="172" lnk="__HDL_srcfile_41.htm#172" z="      READY_OUT :" h="0" c="r"/>
+  <tr cr="m" t="T" l="189" lnk="__HDL_srcfile_41.htm#189" z="      RECHK :" h="0" c="r"/>
+  <tr cr="m" t="T" l="204" lnk="__HDL_srcfile_41.htm#204" z="      READY :" h="0" c="r"/>
+  <tr cr="m" t="T" l="217" lnk="__HDL_srcfile_41.htm#217" z="      CROSS :" h="0" c="r"/>
+  <tr cr="m" t="T" l="239" lnk="__HDL_srcfile_41.htm#239" z="      BURST_REQ :" h="0" c="r"/>
+  <tr cr="c" t="T" l="245" lnk="__HDL_srcfile_41.htm#245" z="      FLUSH :" h="5" c="g"/>
+  <tr cr="c" t="T" l="251" lnk="__HDL_srcfile_41.htm#251" z="      default :" h="2" c="g"/>
+  </table>
+  </div><div><a name="cvg8018"/><hr/><table>
+  <tr l="132" lnk="__HDL_srcfile_41.htm#132" z="           if (joint_flush_in | joint_buffer_small)" c="R" p="40.00"/><tr/>
+  <tr cr="c" t="I" l="132" lnk="__HDL_srcfile_41.htm#132" z="           if (joint_flush_in | joint_buffer_small)" h="5" c="g"/>
+  <tr cr="m" t="T" l="134" lnk="__HDL_srcfile_41.htm#134" z="           else if (joint_ready_out &amp; joint_ready_in &amp; outs_emp..." h="0" c="r"/>
+  <tr cr="m" t="T" l="136" lnk="__HDL_srcfile_41.htm#136" z="           else if (joint_ready_out)" h="0" c="r"/>
+  <tr cr="m" t="T" l="141" lnk="__HDL_srcfile_41.htm#141" z="           else if (fifo_not_ready &amp; joint_ready_in &amp; outs_empt..." h="0" c="r"/>
+  <tr cr="c" t="E" l="152" lnk="__HDL_srcfile_41.htm#152" z="           else" h="11" c="g"/>
+  </table>
+  </div><div class="missing"><a name="cvg8019"/><hr/><table>
+  <tr l="142" lnk="__HDL_srcfile_41.htm#142" z="         if (WRITE)" c="R" p="0.00"/><tr/>
+  <tr cr="m" t="I" l="142" lnk="__HDL_srcfile_41.htm#142" z="         if (WRITE)" h="0" c="r"/>
+  <tr cr="m" t="E" l="147" lnk="__HDL_srcfile_41.htm#147" z="         else" h="0" c="r"/>
+  </table>
+  </div><div class="missing"><a name="cvg8020"/><hr/><table>
+  <tr l="158" lnk="__HDL_srcfile_41.htm#158" z="           if (joint_flush_in)" c="R" p="0.00"/><tr/>
+  <tr cr="m" t="I" l="158" lnk="__HDL_srcfile_41.htm#158" z="           if (joint_flush_in)" h="0" c="r"/>
+  <tr cr="m" t="T" l="160" lnk="__HDL_srcfile_41.htm#160" z="           else if (joint_line_req_clr)" h="0" c="r"/>
+  <tr cr="m" t="E" l="165" lnk="__HDL_srcfile_41.htm#165" z="           else" h="0" c="r"/>
+  </table>
+  </div><div class="missing"><a name="cvg8021"/><hr/><table>
+  <tr l="176" lnk="__HDL_srcfile_41.htm#176" z="           if (joint_cross | page_cross)" c="R" p="0.00"/><tr/>
+  <tr cr="m" t="I" l="176" lnk="__HDL_srcfile_41.htm#176" z="           if (joint_cross | page_cross)" h="0" c="r"/>
+  <tr cr="m" t="T" l="178" lnk="__HDL_srcfile_41.htm#178" z="           else if ((~joint_ready_out) | joint_flush_in | joint..." h="0" c="r"/>
+  <tr cr="m" t="T" l="180" lnk="__HDL_srcfile_41.htm#180" z="           else if (joint_ready_in &amp; outs_empty)" h="0" c="r"/>
+  <tr cr="m" t="E" l="185" lnk="__HDL_srcfile_41.htm#185" z="           else" h="0" c="r"/>
+  </table>
+  </div><div class="missing"><a name="cvg8022"/><hr/><table>
+  <tr l="191" lnk="__HDL_srcfile_41.htm#191" z="           if (joint_flush_in | joint_buffer_small)" c="R" p="0.00"/><tr/>
+  <tr cr="m" t="I" l="191" lnk="__HDL_srcfile_41.htm#191" z="           if (joint_flush_in | joint_buffer_small)" h="0" c="r"/>
+  <tr cr="m" t="T" l="193" lnk="__HDL_srcfile_41.htm#193" z="           else if (joint_ready_in &amp; joint_ready_out)" h="0" c="r"/>
+  <tr cr="m" t="T" l="195" lnk="__HDL_srcfile_41.htm#195" z="           else if (WRITE)" h="0" c="r"/>
+  <tr cr="m" t="T" l="200" lnk="__HDL_srcfile_41.htm#200" z="           else if (READ)" h="0" c="r"/>
+  <tr cr="m" t="A" l="191" lnk="__HDL_srcfile_41.htm#191" z="           if (joint_flush_in | joint_buffer_small)" h="0" c="r"/>
+  </table>
+  </div><div class="missing"><a name="cvg8023"/><hr/><table>
+  <tr l="206" lnk="__HDL_srcfile_41.htm#206" z="           if (joint_cross)" c="R" p="0.00"/><tr/>
+  <tr cr="m" t="I" l="206" lnk="__HDL_srcfile_41.htm#206" z="           if (joint_cross)" h="0" c="r"/>
+  <tr cr="m" t="T" l="211" lnk="__HDL_srcfile_41.htm#211" z="           else if ((~joint_ready_out) | (~joint_ready_in) | ch..." h="0" c="r"/>
+  <tr cr="m" t="E" l="213" lnk="__HDL_srcfile_41.htm#213" z="           else" h="0" c="r"/>
+  </table>
+  </div><div class="missing"><a name="cvg8024"/><hr/><table>
+  <tr l="219" lnk="__HDL_srcfile_41.htm#219" z="           if (joint_buffer_small)" c="R" p="0.00"/><tr/>
+  <tr cr="m" t="I" l="219" lnk="__HDL_srcfile_41.htm#219" z="           if (joint_buffer_small)" h="0" c="r"/>
+  <tr cr="m" t="T" l="221" lnk="__HDL_srcfile_41.htm#221" z="           else if (joint_ready_out &amp; (~joint_cross) &amp; outs_emp..." h="0" c="r"/>
+  <tr cr="m" t="E" l="235" lnk="__HDL_srcfile_41.htm#235" z="           else" h="0" c="r"/>
+  </table>
+  </div><div class="missing"><a name="cvg8025"/><hr/><table>
+  <tr l="223" lnk="__HDL_srcfile_41.htm#223" z="            if (fifo_wr_ready &amp; (fifo_remain &lt;= 'd16)) //rd_gap..." c="R" p="0.00"/><tr/>
+  <tr cr="m" t="I" l="223" lnk="__HDL_srcfile_41.htm#223" z="            if (fifo_wr_ready &amp; (fifo_remain &lt;= 'd16)) //rd_gap..." h="0" c="r"/>
+  <tr cr="m" t="E" l="232" lnk="__HDL_srcfile_41.htm#232" z="            else" h="0" c="r"/>
+  </table>
+  </div><div class="missing"><a name="cvg8026"/><hr/><table>
+  <tr l="227" lnk="__HDL_srcfile_41.htm#227" z="             if (fifo_remain == 'd0)" c="R" p="0.00"/><tr/>
+  <tr cr="m" t="I" l="227" lnk="__HDL_srcfile_41.htm#227" z="             if (fifo_remain == 'd0)" h="0" c="r"/>
+  <tr cr="m" t="E" l="229" lnk="__HDL_srcfile_41.htm#229" z="             else" h="0" c="r"/>
+  </table>
+  </div><div class="covered"><a name="cvg8027"/><hr/><table>
+  <tr l="260" lnk="__HDL_srcfile_41.htm#260" z="     if (reset)" c="G" p="100.00"/><tr/>
+  <tr cr="c" t="I" l="260" lnk="__HDL_srcfile_41.htm#260" z="     if (reset)" h="11" c="g"/>
+  <tr cr="c" t="T" l="262" lnk="__HDL_srcfile_41.htm#262" z="     else if (joint_update)" h="9" c="g"/>
+  <tr cr="c" t="E" l="264" lnk="__HDL_srcfile_41.htm#264" z="     else" h="223" c="g"/>
+  </table>
+  </div><script type="text/javascript" src="../scripts/buildbranchpage.js"></script>
+  <!-- make sure jumps to last few line nos work -->
+<br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+<br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+<br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+<br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+<br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+<br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+<br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+<br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+<br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+<br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+  
+</body>
+</html>
